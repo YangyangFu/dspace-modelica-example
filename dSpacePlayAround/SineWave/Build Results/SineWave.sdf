@@ -1,0 +1,15 @@
+[System]
+Version=2.2
+SystemType=SingleProcessorSystem
+DAQService=DsDAQ
+DsDAQBackground=1
+Status=Start
+File=SineWave.rta
+RTP=1
+
+[1]
+ID=9b0e5f55-ca57-4f45-9de8-2c47fbfbbb07
+Type=DSRTPC
+ServiceID=1
+TraceFile=sine.trc
+

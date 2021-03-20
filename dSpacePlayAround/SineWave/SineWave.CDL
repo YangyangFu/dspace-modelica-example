@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Root>
+	<creator type="key">ConfigurationDesk 6.5</creator>
+	<application>
+		<Name type="key">SineWave.CDL</Name>
+		<DisplayName type="key">SineWave</DisplayName>
+		<Path type="key">.\SineWave</Path>
+		<Component type="key">ProjectApplication</Component>
+		<Type type="key">14</Type>
+		<ApplicationType type="key">3</ApplicationType>
+		<Flags type="key">41216</Flags>
+		<ItemInfoDate type="key">3/20/2021 3:57:33 PM</ItemInfoDate>
+		<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+		<ItemInfoDocs type="key"/>
+		<ItemInfoDescr type="key"/>
+		<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
+		<Log type="key"/>
+		<AddInfoDb type="key"/>
+		<DatabaseID type="key">-1</DatabaseID>
+		<EntityID type="key">{407BBC7A-827A-4A55-94AB-116832DF19FC}</EntityID>
+		<item>
+			<Name type="key">WindowConfiguration.xml</Name>
+			<DisplayName type="key">WindowConfiguration.xml</DisplayName>
+			<Path type="key">.</Path>
+			<Component type="key">ProjectApplication</Component>
+			<Flags type="key">260</Flags>
+			<ExtendedFlags type="key">0</ExtendedFlags>
+			<Type type="key">4</Type>
+			<ItemInfoDate type="key">3/20/2021 4:50:23 PM</ItemInfoDate>
+			<ItemInfoPath type="key"/>
+			<ItemInfoDocs type="key"/>
+			<ItemInfoDescr type="key"/>
+			<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
+			<ItemInfoAddInfoDb type="key"/>
+			<Log type="key"/>
+			<DatabaseID type="key">-1</DatabaseID>
+			<EntityID type="key">{5BD56DE5-C729-4DDB-8AB5-451E0EAD7D6D}</EntityID>
+			<Targets/>
+		</item>
+		<item>
+			<DisplayName type="key">Device Topology</DisplayName>
+			<Component type="key">ProjectApplication</Component>
+			<Flags type="key">131328</Flags>
+			<ExtendedFlags type="key">0</ExtendedFlags>
+			<Type type="key">33</Type>
+			<ItemInfoDate type="key">3/20/2021 3:58:04 PM</ItemInfoDate>
+			<ItemInfoPath type="key"/>
+			<ItemInfoDocs type="key"/>
+			<ItemInfoDescr type="key"/>
+			<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
+			<ItemInfoAddInfoDb type="key"/>
+			<Log type="key"/>
+			<DatabaseID type="key">-1</DatabaseID>
+			<EntityID type="key">{DC949FB1-8BD0-4139-8A2B-8578207A4451}</EntityID>
+			<Targets/>
+		</item>
+		<item>
+			<DisplayName type="key">Hardware Topology</DisplayName>
+			<Component type="key">ProjectApplication</Component>
+			<Flags type="key">256</Flags>
+			<ExtendedFlags type="key">0</ExtendedFlags>
+			<Type type="key">19</Type>
+			<ItemInfoDate type="key">3/20/2021 3:58:04 PM</ItemInfoDate>
+			<ItemInfoPath type="key"/>
+			<ItemInfoDocs type="key"/>
+			<ItemInfoDescr type="key"/>
+			<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
+			<ItemInfoAddInfoDb type="key"/>
+			<Log type="key"/>
+			<DatabaseID type="key">-1</DatabaseID>
+			<EntityID type="key">{BF17F08E-6151-4D82-AAF6-F8A6705444E3}</EntityID>
+			<Targets/>
+		</item>
+		<item>
+			<DisplayName type="key">Model Topology</DisplayName>
+			<Component type="key">ProjectApplication</Component>
+			<Flags type="key">256</Flags>
+			<ExtendedFlags type="key">0</ExtendedFlags>
+			<Type type="key">31</Type>
+			<ItemInfoDate type="key">3/20/2021 3:58:04 PM</ItemInfoDate>
+			<ItemInfoPath type="key"/>
+			<ItemInfoDocs type="key"/>
+			<ItemInfoDescr type="key">This is a simple test example for showing outputing a sinewave D/A signal using ds6241 board.</ItemInfoDescr>
+			<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
+			<ItemInfoAddInfoDb type="key"/>
+			<Log type="key">Model location:
+C:\github\dspace-modelica-example\dSpacePlayAround\Models\sine.slx
+</Log>
+			<DatabaseID type="key">-1</DatabaseID>
+			<EntityID type="key">{1A3D96B3-F6C3-4428-8774-E7EFCF1B8699}</EntityID>
+			<Targets/>
+		</item>
+		<item>
+			<DisplayName type="key">Communication Matrices</DisplayName>
+			<Component type="key">ProjectApplication</Component>
+			<Flags type="key">131328</Flags>
+			<ExtendedFlags type="key">0</ExtendedFlags>
+			<Type type="key">70</Type>
+			<ItemInfoDate type="key">3/20/2021 3:58:04 PM</ItemInfoDate>
+			<ItemInfoPath type="key"/>
+			<ItemInfoDocs type="key"/>
+			<ItemInfoDescr type="key"/>
+			<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
+			<ItemInfoAddInfoDb type="key"/>
+			<Log type="key"/>
+			<DatabaseID type="key">-1</DatabaseID>
+			<EntityID type="key">{E800CB25-F87A-4E1C-B154-F9EE8A0F8B2F}</EntityID>
+			<Targets/>
+		</item>
+		<item>
+			<DisplayName type="key">External Cable Harness</DisplayName>
+			<Component type="key">ProjectApplication</Component>
+			<Flags type="key">131328</Flags>
+			<ExtendedFlags type="key">0</ExtendedFlags>
+			<Type type="key">32</Type>
+			<ItemInfoDate type="key">3/20/2021 3:58:04 PM</ItemInfoDate>
+			<ItemInfoPath type="key"/>
+			<ItemInfoDocs type="key"/>
+			<ItemInfoDescr type="key"/>
+			<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
+			<ItemInfoAddInfoDb type="key"/>
+			<Log type="key"/>
+			<DatabaseID type="key">-1</DatabaseID>
+			<EntityID type="key">{BBEDCB5B-4834-4A2D-8FE8-02497E8662DA}</EntityID>
+			<Targets/>
+		</item>
+		<item>
+			<Name type="key">Application.cfgx</Name>
+			<DisplayName type="key">Core Application</DisplayName>
+			<Path type="key">.</Path>
+			<Component type="key">ProjectApplication</Component>
+			<Flags type="key">260</Flags>
+			<ExtendedFlags type="key">0</ExtendedFlags>
+			<Type type="key">20</Type>
+			<ItemInfoDate type="key">3/20/2021 3:58:04 PM</ItemInfoDate>
+			<ItemInfoPath type="key"/>
+			<ItemInfoDocs type="key"/>
+			<ItemInfoDescr type="key"/>
+			<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
+			<ItemInfoAddInfoDb type="key"/>
+			<Log type="key"/>
+			<DatabaseID type="key">-1</DatabaseID>
+			<EntityID type="key">{46F4AC60-13D2-45C6-9EDF-2BC3007144AC}</EntityID>
+			<Targets/>
+		</item>
+		<item>
+			<Name type="key">Build Results</Name>
+			<DisplayName type="key">Build Results</DisplayName>
+			<Path type="key">.</Path>
+			<Component type="key">ProjectApplication</Component>
+			<Flags type="key">256</Flags>
+			<ExtendedFlags type="key">0</ExtendedFlags>
+			<Type type="key">58</Type>
+			<ItemInfoDate type="key">3/20/2021 5:24:31 PM</ItemInfoDate>
+			<ItemInfoPath type="key"/>
+			<ItemInfoDocs type="key"/>
+			<ItemInfoDescr type="key"/>
+			<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
+			<ItemInfoAddInfoDb type="key"/>
+			<Log type="key"/>
+			<DatabaseID type="key">-1</DatabaseID>
+			<EntityID type="key">{9E476522-9017-4511-A4DD-765A736FD6D2}</EntityID>
+			<Targets/>
+			<item>
+				<Name type="key">Build Results</Name>
+				<DisplayName type="key">itSDFROOT</DisplayName>
+				<Path type="key">.</Path>
+				<Component type="key">ProjectApplication</Component>
+				<Flags type="key">260</Flags>
+				<ExtendedFlags type="key">0</ExtendedFlags>
+				<Type type="key">29</Type>
+				<ItemInfoDate type="key">3/20/2021 5:24:31 PM</ItemInfoDate>
+				<ItemInfoPath type="key"/>
+				<ItemInfoDocs type="key"/>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
+				<ItemInfoAddInfoDb type="key"/>
+				<Log type="key"/>
+				<DatabaseID type="key">-1</DatabaseID>
+				<EntityID type="key">{2719998E-6CD1-4168-A566-D7F62E043FB5}</EntityID>
+				<Targets/>
+				<item>
+					<Name type="key">sine.expswcfg</Name>
+					<DisplayName type="key">sine.expswcfg</DisplayName>
+					<Path type="key">.\Build Results</Path>
+					<Component type="key">ProjectApplication</Component>
+					<Flags type="key">256</Flags>
+					<ExtendedFlags type="key">0</ExtendedFlags>
+					<Type type="key">71</Type>
+					<ItemInfoDate type="key">3/20/2021 5:24:31 PM</ItemInfoDate>
+					<ItemInfoPath type="key"/>
+					<ItemInfoDocs type="key"/>
+					<ItemInfoDescr type="key"/>
+					<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
+					<ItemInfoAddInfoDb type="key"/>
+					<Log type="key"/>
+					<DatabaseID type="key">-1</DatabaseID>
+					<EntityID type="key">{C1DB6907-8005-4360-A42D-1421DD7EDD27}</EntityID>
+					<Targets/>
+				</item>
+				<item>
+					<Name type="key">sine.map</Name>
+					<DisplayName type="key">sine.map</DisplayName>
+					<Path type="key">.\Build Results</Path>
+					<Component type="key">ProjectApplication</Component>
+					<Flags type="key">256</Flags>
+					<ExtendedFlags type="key">0</ExtendedFlags>
+					<Type type="key">36</Type>
+					<ItemInfoDate type="key">3/20/2021 5:24:31 PM</ItemInfoDate>
+					<ItemInfoPath type="key"/>
+					<ItemInfoDocs type="key"/>
+					<ItemInfoDescr type="key"/>
+					<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
+					<ItemInfoAddInfoDb type="key"/>
+					<Log type="key"/>
+					<DatabaseID type="key">-1</DatabaseID>
+					<EntityID type="key">{260CAA62-D5DB-423D-A60A-DD75F2A6B772}</EntityID>
+					<Targets/>
+				</item>
+				<item>
+					<Name type="key">sine.trc</Name>
+					<DisplayName type="key">sine.trc</DisplayName>
+					<Path type="key">.\Build Results</Path>
+					<Component type="key">ProjectApplication</Component>
+					<Flags type="key">256</Flags>
+					<ExtendedFlags type="key">0</ExtendedFlags>
+					<Type type="key">34</Type>
+					<ItemInfoDate type="key">3/20/2021 5:24:31 PM</ItemInfoDate>
+					<ItemInfoPath type="key"/>
+					<ItemInfoDocs type="key"/>
+					<ItemInfoDescr type="key"/>
+					<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
+					<ItemInfoAddInfoDb type="key"/>
+					<Log type="key"/>
+					<DatabaseID type="key">-1</DatabaseID>
+					<EntityID type="key">{288FBCE0-095E-4EF0-BC81-1076926ED756}</EntityID>
+					<Targets/>
+				</item>
+				<item>
+					<Name type="key">SineWave.dsbuildinfo</Name>
+					<DisplayName type="key">SineWave.dsbuildinfo</DisplayName>
+					<Path type="key">.\Build Results</Path>
+					<Component type="key">ProjectApplication</Component>
+					<Flags type="key">260</Flags>
+					<ExtendedFlags type="key">0</ExtendedFlags>
+					<Type type="key">4</Type>
+					<ItemInfoDate type="key">3/20/2021 5:24:31 PM</ItemInfoDate>
+					<ItemInfoPath type="key"/>
+					<ItemInfoDocs type="key"/>
+					<ItemInfoDescr type="key"/>
+					<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
+					<ItemInfoAddInfoDb type="key"/>
+					<Log type="key"/>
+					<DatabaseID type="key">-1</DatabaseID>
+					<EntityID type="key">{2E6C739A-F918-4C62-815E-8A8AAEBCB335}</EntityID>
+					<Targets/>
+				</item>
+				<item>
+					<Name type="key">SineWave.rta</Name>
+					<DisplayName type="key">SineWave.rta</DisplayName>
+					<Path type="key">.\Build Results</Path>
+					<Component type="key">ProjectApplication</Component>
+					<Flags type="key">256</Flags>
+					<ExtendedFlags type="key">0</ExtendedFlags>
+					<Type type="key">37</Type>
+					<ItemInfoDate type="key">3/20/2021 5:24:31 PM</ItemInfoDate>
+					<ItemInfoPath type="key"/>
+					<ItemInfoDocs type="key"/>
+					<ItemInfoDescr type="key"/>
+					<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
+					<ItemInfoAddInfoDb type="key"/>
+					<Log type="key"/>
+					<DatabaseID type="key">-1</DatabaseID>
+					<EntityID type="key">{215CAD24-B1AB-4624-866B-487A1D41C317}</EntityID>
+					<Targets/>
+				</item>
+				<item>
+					<Name type="key">SineWave.sdf</Name>
+					<DisplayName type="key">SineWave.sdf</DisplayName>
+					<Path type="key">.\Build Results</Path>
+					<Component type="key">ProjectApplication</Component>
+					<Flags type="key">256</Flags>
+					<ExtendedFlags type="key">0</ExtendedFlags>
+					<Type type="key">35</Type>
+					<ItemInfoDate type="key">3/20/2021 5:24:31 PM</ItemInfoDate>
+					<ItemInfoPath type="key"/>
+					<ItemInfoDocs type="key"/>
+					<ItemInfoDescr type="key"/>
+					<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
+					<ItemInfoAddInfoDb type="key"/>
+					<Log type="key"/>
+					<DatabaseID type="key">-1</DatabaseID>
+					<EntityID type="key">{050182A6-1676-42C5-A49E-585EC3B7579E}</EntityID>
+					<Targets/>
+				</item>
+			</item>
+		</item>
+	</application>
+</Root>
