@@ -22,7 +22,7 @@ APPL_VARS                          =
 APPL_VARS                         += DEFAULT
 APPL_VAR_NAME_DEFAULT              = sine_DEFAULT
 APPL_VAR_OPT_Linkage_DEFAULT       = DEFAULT
-APPL_VAR_RESULT_DIRPATH_DEFAULT    = "C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Build\Results.tmp"
+APPL_VAR_RESULT_DIRPATH_DEFAULT    = "D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Build\Results.tmp"
 
 
 
@@ -48,11 +48,11 @@ INTERFACE_CC_SRC_FILES        += \
 
 INTERFACE_CC_SRC_DIRPATHS     += \
  ".\..\SysIntCode" \
- ".\..\..\..\..\..\..\..\Program Files\dSPACE RCPHIL 2020-A\ConfigurationDesk\Implementation\EmbeddedSW\Src"
+ "C:\Program Files\dSPACE RCPHIL 2020-A\ConfigurationDesk\Implementation\EmbeddedSW\Src"
 
 INTERFACE_CC_HDR_DIRPATHS     += \
  ".\..\SysIntCode" \
- ".\..\..\..\..\..\..\..\Program Files\dSPACE RCPHIL 2020-A\ConfigurationDesk\Implementation\EmbeddedSW\Src"
+ "C:\Program Files\dSPACE RCPHIL 2020-A\ConfigurationDesk\Implementation\EmbeddedSW\Src"
 
 INTERFACE_LIB_DIRPATHS        +=
 

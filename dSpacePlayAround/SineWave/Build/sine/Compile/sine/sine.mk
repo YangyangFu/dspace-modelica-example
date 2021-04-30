@@ -5,14 +5,14 @@ SRCS= sine.c sine_data.c sine_dsrtmdlfcn.c sine_dsrtmf.c sine_dsrttf.c sine_dsrt
 MRK_FILES                   = sine.mrk sine_data.mrk sine_dsrtmdlfcn.mrk sine_dsrtmf.mrk sine_dsrttf.mrk sine_dsrtvdf.mrk  
 OBJS= sine.o86 sine_data.o86 sine_dsrtmdlfcn.o86 sine_dsrtmf.o86 sine_dsrttf.o86 sine_dsrtvdf.o86
 CC_SRC_DIRPATHS = \
- C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt \
- C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine \
+ D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt \
+ D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine \
  "C:\PROGRA~1\MATLAB\R2020a\simulink\include" \
  "C:\PROGRA~1\MATLAB\R2020a\extern\include" \
  "C:\PROGRA~1\MATLAB\R2020a\rtw\c\src" \
  "C:\PROGRA~1\MATLAB\R2020a\rtw\c\src\ext_mode\common" \
- "C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine" \
- "C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt" \
+ "D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine" \
+ "D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt" \
  "C:\PROGRA~1\MATLAB\R2020a\extern\include" \
  "C:\PROGRA~1\MATLAB\R2020a\simulink\include" \
  "C:\PROGRA~1\MATLAB\R2020a\rtw\c\src" \
@@ -21,20 +21,20 @@ CC_SRC_DIRPATHS = \
  "C:\PROGRA~1\MATLAB\R2020a\simulink\src" 
  
 CC_HDR_DIRPATHS = \
- C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt \
- C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine \
+ D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt \
+ D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine \
  "C:\PROGRA~1\MATLAB\R2020a\simulink\include" \
  "C:\PROGRA~1\MATLAB\R2020a\extern\include" \
  "C:\PROGRA~1\MATLAB\R2020a\rtw\c\src" \
  "C:\PROGRA~1\MATLAB\R2020a\rtw\c\src\ext_mode\common" \
- "C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine" \
- "C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt" \
+ "D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine" \
+ "D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt" \
  "C:\PROGRA~1\MATLAB\R2020a\extern\include" \
  "C:\PROGRA~1\MATLAB\R2020a\simulink\include" \
  "C:\PROGRA~1\MATLAB\R2020a\rtw\c\src" \
  "C:\PROGRA~1\MATLAB\R2020a\rtw\c\src\ext_mode\common" 
  
-CC_LIB_FILE                 = C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt\sine.a 
+CC_LIB_FILE                 = D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt\sine.a 
 LIB_DIRPATHS                =     
 CUSTOM_DIRPATHS             =    
 CC_ADD_OPTS                 =     
@@ -92,14 +92,14 @@ CC_ALL_OPTS = \
  -O2 \
  -finline-functions \
  -D_INLINE \
- -IC:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt \
- -IC:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine \
+ -ID:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt \
+ -ID:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine \
  -IC:\PROGRA~1\MATLAB\R2020a\simulink\include \
  -IC:\PROGRA~1\MATLAB\R2020a\extern\include \
  -IC:\PROGRA~1\MATLAB\R2020a\rtw\c\src \
  -IC:\PROGRA~1\MATLAB\R2020a\rtw\c\src\ext_mode\common \
- -IC:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine \
- -IC:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt \
+ -ID:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine \
+ -ID:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt \
  -IC:\PROGRA~1\MATLAB\R2020a\extern\include \
  -IC:\PROGRA~1\MATLAB\R2020a\simulink\include \
  -IC:\PROGRA~1\MATLAB\R2020a\rtw\c\src \
@@ -160,14 +160,14 @@ CPP_ALL_OPTS = \
  -O2 \
  -finline-functions \
  -D_INLINE \
- -IC:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt \
- -IC:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine \
+ -ID:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt \
+ -ID:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine \
  -IC:\PROGRA~1\MATLAB\R2020a\simulink\include \
  -IC:\PROGRA~1\MATLAB\R2020a\extern\include \
  -IC:\PROGRA~1\MATLAB\R2020a\rtw\c\src \
  -IC:\PROGRA~1\MATLAB\R2020a\rtw\c\src\ext_mode\common \
- -IC:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine \
- -IC:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt \
+ -ID:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine \
+ -ID:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt \
  -IC:\PROGRA~1\MATLAB\R2020a\extern\include \
  -IC:\PROGRA~1\MATLAB\R2020a\simulink\include \
  -IC:\PROGRA~1\MATLAB\R2020a\rtw\c\src \
@@ -198,14 +198,14 @@ CPP_ALL_OPTS = \
 .TYPE.OBJ = .o86 .o86 
 
 .PATH.c = \
- C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt; \
- C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine; \
+ D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt; \
+ D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine; \
  C:\PROGRA~1\MATLAB\R2020a\simulink\include; \
  C:\PROGRA~1\MATLAB\R2020a\extern\include; \
  C:\PROGRA~1\MATLAB\R2020a\rtw\c\src; \
  C:\PROGRA~1\MATLAB\R2020a\rtw\c\src\ext_mode\common; \
- C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine; \
- C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt; \
+ D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine; \
+ D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt; \
  C:\PROGRA~1\MATLAB\R2020a\extern\include; \
  C:\PROGRA~1\MATLAB\R2020a\simulink\include; \
  C:\PROGRA~1\MATLAB\R2020a\rtw\c\src; \
@@ -214,14 +214,14 @@ CPP_ALL_OPTS = \
  C:\PROGRA~1\MATLAB\R2020a\simulink\src; 
  
 .PATH.cpp = \
- C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt; \
- C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine; \
+ D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt; \
+ D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine; \
  C:\PROGRA~1\MATLAB\R2020a\simulink\include; \
  C:\PROGRA~1\MATLAB\R2020a\extern\include; \
  C:\PROGRA~1\MATLAB\R2020a\rtw\c\src; \
  C:\PROGRA~1\MATLAB\R2020a\rtw\c\src\ext_mode\common; \
- C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine; \
- C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt; \
+ D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine; \
+ D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt; \
  C:\PROGRA~1\MATLAB\R2020a\extern\include; \
  C:\PROGRA~1\MATLAB\R2020a\simulink\include; \
  C:\PROGRA~1\MATLAB\R2020a\rtw\c\src; \
@@ -230,14 +230,14 @@ CPP_ALL_OPTS = \
  C:\PROGRA~1\MATLAB\R2020a\simulink\src; 
  
 .PATH.h = \
- C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt; \
- C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine; \
+ D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt; \
+ D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine; \
  C:\PROGRA~1\MATLAB\R2020a\simulink\include; \
  C:\PROGRA~1\MATLAB\R2020a\extern\include; \
  C:\PROGRA~1\MATLAB\R2020a\rtw\c\src; \
  C:\PROGRA~1\MATLAB\R2020a\rtw\c\src\ext_mode\common; \
- C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine; \
- C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt; \
+ D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine; \
+ D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt; \
  C:\PROGRA~1\MATLAB\R2020a\extern\include; \
  C:\PROGRA~1\MATLAB\R2020a\simulink\include; \
  C:\PROGRA~1\MATLAB\R2020a\rtw\c\src; \
@@ -245,54 +245,54 @@ CPP_ALL_OPTS = \
  
 
 .HDRPATH.c = \
- C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt \
- C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine \
+ D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt \
+ D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine \
  "C:\PROGRA~1\MATLAB\R2020a\simulink\include" \
  "C:\PROGRA~1\MATLAB\R2020a\extern\include" \
  "C:\PROGRA~1\MATLAB\R2020a\rtw\c\src" \
  "C:\PROGRA~1\MATLAB\R2020a\rtw\c\src\ext_mode\common" \
- "C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine" \
- "C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt" \
+ "D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine" \
+ "D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt" \
  "C:\PROGRA~1\MATLAB\R2020a\extern\include" \
  "C:\PROGRA~1\MATLAB\R2020a\simulink\include" \
  "C:\PROGRA~1\MATLAB\R2020a\rtw\c\src" \
  "C:\PROGRA~1\MATLAB\R2020a\rtw\c\src\ext_mode\common" \
  | \
- C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt \
- C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine \
+ D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt \
+ D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine \
  "C:\PROGRA~1\MATLAB\R2020a\simulink\include" \
  "C:\PROGRA~1\MATLAB\R2020a\extern\include" \
  "C:\PROGRA~1\MATLAB\R2020a\rtw\c\src" \
  "C:\PROGRA~1\MATLAB\R2020a\rtw\c\src\ext_mode\common" \
- "C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine" \
- "C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt" \
+ "D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine" \
+ "D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt" \
  "C:\PROGRA~1\MATLAB\R2020a\extern\include" \
  "C:\PROGRA~1\MATLAB\R2020a\simulink\include" \
  "C:\PROGRA~1\MATLAB\R2020a\rtw\c\src" \
  "C:\PROGRA~1\MATLAB\R2020a\rtw\c\src\ext_mode\common" 
  
 .HDRPATH.cpp = \
- C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt \
- C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine \
+ D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt \
+ D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine \
  "C:\PROGRA~1\MATLAB\R2020a\simulink\include" \
  "C:\PROGRA~1\MATLAB\R2020a\extern\include" \
  "C:\PROGRA~1\MATLAB\R2020a\rtw\c\src" \
  "C:\PROGRA~1\MATLAB\R2020a\rtw\c\src\ext_mode\common" \
- "C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine" \
- "C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt" \
+ "D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine" \
+ "D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt" \
  "C:\PROGRA~1\MATLAB\R2020a\extern\include" \
  "C:\PROGRA~1\MATLAB\R2020a\simulink\include" \
  "C:\PROGRA~1\MATLAB\R2020a\rtw\c\src" \
  "C:\PROGRA~1\MATLAB\R2020a\rtw\c\src\ext_mode\common" \
  | \
- C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt \
- C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine \
+ D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt \
+ D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine \
  "C:\PROGRA~1\MATLAB\R2020a\simulink\include" \
  "C:\PROGRA~1\MATLAB\R2020a\extern\include" \
  "C:\PROGRA~1\MATLAB\R2020a\rtw\c\src" \
  "C:\PROGRA~1\MATLAB\R2020a\rtw\c\src\ext_mode\common" \
- "C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine" \
- "C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt" \
+ "D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine" \
+ "D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt" \
  "C:\PROGRA~1\MATLAB\R2020a\extern\include" \
  "C:\PROGRA~1\MATLAB\R2020a\simulink\include" \
  "C:\PROGRA~1\MATLAB\R2020a\rtw\c\src" \
@@ -310,9 +310,9 @@ MKMF_TABLEN  = 2
 # MKMF Replacements 
 # ----------------------------------------------------------------------------- 
 
-HDRS= multiword_types.h rtmodel.h rtwtypes.h sine.h sine_dsmpbap.h sine_dsrtmdlfcn.h sine_dsrtmf.h sine_dsrttf.h \
-		  sine_dsrtvdf.h sine_private.h sine_types.h tmwtypes.h rtw_continuous.h rtw_extmode.h rtw_matlogging.h \
-		  rtw_solver.h simstruc_types.h sl_sample_time_defs.h sl_types_def.h sysran_types.h
+HDRS= tmwtypes.h rtw_continuous.h rtw_extmode.h rtw_matlogging.h rtw_solver.h simstruc_types.h sl_sample_time_defs.h \
+		  sl_types_def.h sysran_types.h multiword_types.h rtmodel.h rtwtypes.h sine.h sine_dsmpbap.h sine_dsrtmdlfcn.h \
+		  sine_dsrtmf.h sine_dsrttf.h sine_dsrtvdf.h sine_private.h sine_types.h
 
 EXTHDRS=
 

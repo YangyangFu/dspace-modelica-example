@@ -31,6 +31,7 @@
 			<ItemInfoAddInfoDb type="key"/>
 			<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
 			<item>
+				<Component type="key">Instrumentation</Component>
 				<Targets type="key">instrumentation</Targets>
 				<Name type="key">Experiment Layouts</Name>
 				<DisplayName type="key">Experiment Layouts</DisplayName>
@@ -45,20 +46,6 @@
 				<ItemInfoDescr type="key"/>
 				<ItemInfoAddInfoDb type="key"/>
 				<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
-				<item>
-					<Name type="key">SineWaveDA.cdc</Name>
-					<DisplayName type="key">SineWaveDA.cdc</DisplayName>
-					<Path type="key">..\..\..\dSpacePlayAroundControlDesk\SineWaveDA\Experiment Layouts</Path>
-					<Flags type="key">4100</Flags>
-					<Type type="key">4</Type>
-					<UniqueID type="key">908478848</UniqueID>
-					<EntityID type="key">{757B7BA5-0233-4B6F-A8AF-8C4F90FD91A4}</EntityID>
-					<ItemInfoDate type="key">3/20/2021 5:42:24 PM</ItemInfoDate>
-					<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
-					<ItemInfoDescr type="key"/>
-					<ItemInfoAddInfoDb type="key"/>
-					<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
-				</item>
 				<item>
 					<Component type="key">Instrumentation</Component>
 					<Name type="key">plot.lay</Name>

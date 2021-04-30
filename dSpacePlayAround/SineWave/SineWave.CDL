@@ -84,7 +84,7 @@
 			<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
 			<ItemInfoAddInfoDb type="key"/>
 			<Log type="key">Model location:
-C:\github\dspace-modelica-example\dSpacePlayAround\Models\sine.slx
+D:\github\dspace-modelica-example\dSpacePlayAround\Models\sine.slx
 </Log>
 			<DatabaseID type="key">-1</DatabaseID>
 			<EntityID type="key">{1A3D96B3-F6C3-4428-8774-E7EFCF1B8699}</EntityID>

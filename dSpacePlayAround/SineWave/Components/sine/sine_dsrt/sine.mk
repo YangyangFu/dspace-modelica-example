@@ -81,7 +81,7 @@ MW_NCSTATES                       = 0
 MW_MULTITASKING                   = 0
 # Support for parallel computing
 MASTER_ANCHOR_DIR                 = 
-START_DIR                         = C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine
+START_DIR                         = D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine
 MW_TARGET_LANG_EXT                = c
 # MW_TGT_FCN_LIB                  = None
 # MW_EXTMODE_STATIC_ALLOC         = 0

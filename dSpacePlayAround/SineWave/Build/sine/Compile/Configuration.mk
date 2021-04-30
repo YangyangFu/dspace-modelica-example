@@ -72,15 +72,15 @@ TMK_CFG_MAKE_INCLUDE_CONTEXTS   =  sine Main
 TMK_CFG_HIDE_GLOBAL_SYMBOLS     = 0
 
 # Kept global symbols lists
-TMK_CFG_sine_KEPT_GLOBAL_SYMBOLS_FILEPATH = C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Build\sine\Compile\sine_gs.txt
+TMK_CFG_sine_KEPT_GLOBAL_SYMBOLS_FILEPATH = D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Build\sine\Compile\sine_gs.txt
 
 
 # Included makefiles
 TMK_CFG_sine_MAKE_INCLUDE_FILEPATHS =  \
- "C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt\sine.mk" \
- "C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_AdditionalFiles.mk"
+ "D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_dsrt\sine.mk" \
+ "D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Components\sine\sine_AdditionalFiles.mk"
 TMK_CFG_Main_MAKE_INCLUDE_FILEPATHS =  \
- "C:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Build\sine\Compile\sine_ext.mk"
+ "D:\github\dspace-modelica-example\dSpacePlayAround\SineWave\Build\sine\Compile\sine_ext.mk"
 
 
 TMK_CFG_ABORT_MUTEX_NAME        = CfgDeskAbortMutex

@@ -14,10 +14,6 @@
 					<Name type="key">Experiment Layouts</Name>
 					<ViewFlags type="key">1</ViewFlags>
 					<item>
-						<Name type="key">SineWaveDA.cdc</Name>
-						<ViewFlags type="key">1</ViewFlags>
-					</item>
-					<item>
 						<Name type="key">plot.lay</Name>
 						<ViewFlags type="key">5</ViewFlags>
 					</item>

@@ -343,7 +343,7 @@
           <String Role="ArgName">ApplicableFilters</String>
           <StringNTuple Role="ArgValue" StringValues="MappablePortsFilter" />
           <String Role="ArgName">FitToWidthMode</String>
-          <Int Role="ArgValue">1</Int>
+          <Int Role="ArgValue">0</Int>
           <String Role="ArgName">ExpansionStatus</String>
           <ExpansionStatus Role="ArgValue">
             <Item Role="Block" OrderingID="10" Expanded="0" />
@@ -353,12 +353,12 @@
             <Item Role="Block" OrderingID="20" Expanded="0" />
           </ExpansionStatus>
           <String Role="ArgName">TotalWidthPercent</String>
-          <String Role="ArgValue">1</String>
+          <String Role="ArgValue">0.9752422</String>
           <String Role="ArgName">ColumnVisibleStatus</String>
           <ColumnVisibleStatus Role="ArgValue">
-            <Item Role="Column" ColumnNr="0" Visible="True" WidthPercent="0.3339207" />
-            <Item Role="Column" ColumnNr="1" Visible="True" WidthPercent="0.3339207" />
-            <Item Role="Column" ColumnNr="2" Visible="True" WidthPercent="0.3321586" />
+            <Item Role="Column" ColumnNr="0" Visible="True" WidthPercent="0.2538631" />
+            <Item Role="Column" ColumnNr="1" Visible="True" WidthPercent="0.3256071" />
+            <Item Role="Column" ColumnNr="2" Visible="True" WidthPercent="0.4205298" />
           </ColumnVisibleStatus>
           <String Role="ArgName">History</String>
           <History Role="ArgValue" />

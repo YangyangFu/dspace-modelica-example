@@ -19,7 +19,7 @@
 			<Targets type="key">project</Targets>
 			<Name type="key">dSpacePlayAroundControlDesk</Name>
 			<DisplayName type="key">dSpacePlayAroundControlDesk</DisplayName>
-			<Path type="key">..\..</Path>
+			<Path type="key">..</Path>
 			<Flags type="key">4100</Flags>
 			<Type type="key">3</Type>
 			<UniqueID type="key">918315588</UniqueID>
@@ -100,10 +100,10 @@
 					<EntityID type="key">{08538A44-9CCD-4262-9240-A9FE5AD31FEB}</EntityID>
 					<ItemInfoDate type="key">3/20/2021 5:42:25 PM</ItemInfoDate>
 					<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+					<ItemInfoDescr type="key"/>
 					<ItemInfoLog type="key">
 Original file added from ..\dSpacePlayAround\SineWave\Build Results\SineWave.sdf [2021-03-20 22:34:56 (UTC)]
 </ItemInfoLog>
-					<ItemInfoDescr type="key"/>
 					<ItemInfoAddInfoDb type="key"/>
 					<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
 					<item>
