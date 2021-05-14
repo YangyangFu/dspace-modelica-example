@@ -102,9 +102,16 @@ model FiveZoneG36
 
   Modelica.Blocks.Interfaces.RealInput yVAVCor "Signal for VAV damper"
     annotation (Placement(transformation(extent={{-420,60},{-380,100}})));
-  Modelica.Blocks.Interfaces.RealOutput yVAVCor_actual
-    "Actual VAV damper position"
-    annotation (Placement(transformation(extent={{626,48},{646,68}})));
+  Modelica.Blocks.Interfaces.RealInput yVAVSou "Signal for south VAV damper"
+    annotation (Placement(transformation(extent={{-420,100},{-380,140}})));
+  Modelica.Blocks.Interfaces.RealOutput TRooCor "Core room air temperatures"
+    annotation (Placement(transformation(extent={{1300,490},{1320,510}})));
+  Modelica.Blocks.Interfaces.RealOutput TRooSou "South room air temperatures"
+    annotation (Placement(transformation(extent={{1300,450},{1320,470}})));
+  Modelica.Blocks.Interfaces.RealOutput TDryBul "outdoor air temperatures"
+    annotation (Placement(transformation(extent={{1300,550},{1320,570}})));
+  Modelica.Blocks.Interfaces.RealOutput relHum "outdoor air relative humidty"
+    annotation (Placement(transformation(extent={{1300,590},{1320,610}})));
 equation
   connect(fanSup.port_b, dpDisSupFan.port_a) annotation (Line(
       points={{320,-40},{320,0},{320,-10},{320,-10}},
@@ -143,8 +150,6 @@ equation
           90},{1228,32},{1238,32}}, color={0,0,127}));
   connect(cor.yVal, conVAVCor.yVal) annotation (Line(points={{566,34},{560,34},{
           560,43},{552,43}}, color={0,0,127}));
-  connect(conVAVSou.yDam, sou.yVAV) annotation (Line(points={{722,46},{730,46},{
-          730,48},{746,48}}, color={0,0,127}));
   connect(conVAVSou.yVal, sou.yVal) annotation (Line(points={{722,41},{732.5,41},
           {732.5,32},{746,32}}, color={0,0,127}));
   connect(conVAVEas.yVal, eas.yVal) annotation (Line(points={{902,41},{912.5,41},
@@ -403,8 +408,29 @@ equation
           127}));
   connect(cor.yVAV, yVAVCor) annotation (Line(points={{566,50},{556,50},{556,64},
           {478,64},{478,80},{-400,80}}, color={0,0,127}));
-  connect(cor.y_actual, yVAVCor_actual)
-    annotation (Line(points={{612,58},{636,58}}, color={0,0,127}));
+  connect(sou.yVAV, yVAVSou) annotation (Line(points={{746,48},{730,48},{730,72},
+          {-360,72},{-360,120},{-400,120}}, color={0,0,127}));
+  connect(flo.TRooAir[1], TRooSou) annotation (Line(points={{1094.14,488.4},{
+          1280,488.4},{1280,460},{1310,460}}, color={0,0,127}));
+  connect(flo.TRooAir[5], TRooCor) annotation (Line(points={{1094.14,494.267},{
+          1280,494.267},{1280,500},{1310,500}}, color={0,0,127}));
+  connect(weaBus.relHum, relHum) annotation (Line(
+      points={{-320,180},{-322,180},{-322,668},{1260,668},{1260,600},{1310,600}},
+
+      color={255,204,51},
+      thickness=0.5), Text(
+      string="%first",
+      index=-1,
+      extent={{-6,3},{-6,3}},
+      horizontalAlignment=TextAlignment.Right));
+  connect(weaBus.TDryBul, TDryBul) annotation (Line(
+      points={{-320,180},{-320,672},{1262,672},{1262,560},{1310,560}},
+      color={255,204,51},
+      thickness=0.5), Text(
+      string="%first",
+      index=-1,
+      extent={{-6,3},{-6,3}},
+      horizontalAlignment=TextAlignment.Right));
   annotation (
     Diagram(coordinateSystem(preserveAspectRatio=false,extent={{-380,-320},{1400,
             680}})),
