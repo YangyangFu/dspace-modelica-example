@@ -416,13 +416,13 @@ equation
           1280,494.267},{1280,500},{1310,500}}, color={0,0,127}));
   connect(weaBus.relHum, relHum) annotation (Line(
       points={{-320,180},{-322,180},{-322,668},{1260,668},{1260,600},{1310,600}},
-
       color={255,204,51},
       thickness=0.5), Text(
       string="%first",
       index=-1,
       extent={{-6,3},{-6,3}},
       horizontalAlignment=TextAlignment.Right));
+
   connect(weaBus.TDryBul, TDryBul) annotation (Line(
       points={{-320,180},{-320,672},{1262,672},{1262,560},{1310,560}},
       color={255,204,51},
@@ -531,11 +531,6 @@ This is for
     experiment(
       StopTime=172800,
       Tolerance=1e-06,
-      __Dymola_fixedstepsize=1,
-      __Dymola_Algorithm="Euler"),
-    Icon(coordinateSystem(extent={{-100,-100},{100,100}})),
-    __Dymola_experimentFlags(Advanced(
-        InlineMethod=1,
-        InlineOrder=2,
-        InlineFixedStep=1)));
+      __Dymola_Algorithm="Cvode"),
+    Icon(coordinateSystem(extent={{-100,-100},{100,100}})));
 end FiveZoneG36;
