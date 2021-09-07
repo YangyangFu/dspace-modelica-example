@@ -17,10 +17,5 @@ equation
     experiment(
       StopTime=7200,
       Tolerance=1e-06,
-      __Dymola_fixedstepsize=0.001,
-      __Dymola_Algorithm="Euler"),
-    __Dymola_experimentFlags(Advanced(
-        InlineMethod=1,
-        InlineOrder=2,
-        InlineFixedStep=0.001)));
+      __Dymola_Algorithm="Cvode"));
 end SimpleVAV;
