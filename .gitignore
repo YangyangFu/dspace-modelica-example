@@ -71,3 +71,8 @@ fmiModelIdentifier.h'
 
 # FMU outputs
 ~FMUOutputs
+
+# Simulink-Dymola interfaces
+_dslogx64.txt
+_dslogx86.txt
+alistlog.txt
