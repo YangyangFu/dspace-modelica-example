@@ -58,11 +58,7 @@
       <Int Role="ArgValue">1</Int>
       <String Role="ArgName">ExpansionState</String>
       <ExpansionState Role="ArgValue">
-        <Node Index="0">
-          <Node Index="5">
-            <Node Index="0" />
-          </Node>
-        </Node>
+        <Node Index="0" />
       </ExpansionState>
     </ControlBar>
     <ControlBar Guid="c06b13f2-66c5-48d4-ba17-6273053a5697" />

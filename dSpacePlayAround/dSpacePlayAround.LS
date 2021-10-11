@@ -35,7 +35,7 @@
 			</item>
 			<item>
 				<Name type="key">SineWave.CDL</Name>
-				<ViewFlags type="key">45</ViewFlags>
+				<ViewFlags type="key">41</ViewFlags>
 			</item>
 		</viewflags>
 	</ProjectExperiment>
