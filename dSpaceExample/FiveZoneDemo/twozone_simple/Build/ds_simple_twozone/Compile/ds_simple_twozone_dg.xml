@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<jobs>
+<abortmutex><mutexname>CfgDeskAbortMutex</mutexname><abortmsg>Abort requested. Waiting for already started jobs to finish.</abortmsg></abortmutex>
+ <job genre="execute">
+ <workingdir>D:/github/dspace-modelica-example/dSpaceExample/FiveZoneDemo/twozone_simple/Build/ds_simple_twozone/Compile/ds_simple_twozone</workingdir>
+ <startmsg>Generating dependencies in "ds_simple_twozone\ds_simple_twozone.mk" ...</startmsg>
+ <command>"C:\Program Files\dSPACE RCPHIL 2020-A\SCALEXIO\bin\DsMkmf.exe" -c -dS -pS -oH+ -r -q -f ds_simple_twozone.mk</command>
+ <errmsg>Generating dependencies in "ds_simple_twozone\ds_simple_twozone.mk" failed</errmsg>
+ </job>
+ <job genre="execute">
+ <workingdir>D:/github/dspace-modelica-example/dSpaceExample/FiveZoneDemo/twozone_simple/Build/ds_simple_twozone/Compile</workingdir>
+ <startmsg>Generating dependencies in "ds_simple_twozone.mk" ...</startmsg>
+ <command>"C:\Program Files\dSPACE RCPHIL 2020-A\SCALEXIO\bin\DsMkmf.exe" -c -dS -pS -oH+ -r -q -f ds_simple_twozone.mk</command>
+ <errmsg>Generating dependencies in "ds_simple_twozone.mk" failed</errmsg>
+ </job>
+</jobs>
+

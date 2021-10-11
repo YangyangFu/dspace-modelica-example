@@ -80,7 +80,7 @@ model SimpleTwoZone
       Placement(transformation(
         extent={{-10,-10},{10,10}},
         rotation=0,
-        origin={66,0})));
+        origin={74,0})));
   Modelica.Blocks.Interfaces.RealOutput V2_flow
     "Volume flow rate from port_a to port_b" annotation (Placement(
         transformation(extent={{160,74},{180,94}}), iconTransformation(extent={{
@@ -97,6 +97,18 @@ model SimpleTwoZone
                                                 "Room air temperature"
     annotation (Placement(transformation(extent={{160,-46},{180,-26}}),
         iconTransformation(extent={{160,-46},{180,-26}})));
+  Buildings.Fluid.Sensors.TemperatureTwoPort TDisVAV1(redeclare package Medium
+      = MediumA, m_flow_nominal=m_flow_nominal)
+    annotation (Placement(transformation(extent={{40,-10},{60,10}})));
+  Buildings.Fluid.Sensors.TemperatureTwoPort TDisVAV2(redeclare package Medium
+      = MediumA, m_flow_nominal=m_flow_nominal)
+    annotation (Placement(transformation(extent={{32,90},{52,110}})));
+  Modelica.Blocks.Interfaces.RealOutput TDis2
+    "Temperature of the passing fluid"
+    annotation (Placement(transformation(extent={{160,90},{180,110}})));
+  Modelica.Blocks.Interfaces.RealOutput TDis1
+    "Temperature of the passing fluid"
+    annotation (Placement(transformation(extent={{160,-10},{180,10}})));
 equation
   connect(zer.y, vav1.yVal) annotation (Line(points={{-73,40},{-4,40},{-4,-48},{
           16,-48}}, color={0,0,127}));
@@ -144,22 +156,31 @@ equation
   connect(byp.port_b, rooSin.ports[3]) annotation (Line(points={{52,-110},{
           102.667,-110},{102.667,-120}},
                                  color={0,127,255}));
-  connect(vav2.port_b, VSup2.port_a)
-    annotation (Line(points={{30,82},{30,100},{56,100}}, color={0,127,255}));
   connect(VSup2.port_b, zon2.supplyAir) annotation (Line(points={{76,100},{92,100},
           {92,66},{114,66}}, color={0,127,255}));
-  connect(vav1.port_b, VSup1.port_a)
-    annotation (Line(points={{30,-20},{30,0},{56,0}}, color={0,127,255}));
-  connect(VSup1.port_b, zon1.supplyAir) annotation (Line(points={{76,0},{100,0},
+  connect(VSup1.port_b, zon1.supplyAir) annotation (Line(points={{84,0},{100,0},
           {100,-76},{116,-76}}, color={0,127,255}));
   connect(VSup2.V_flow, V2_flow) annotation (Line(points={{66,111},{66,120},{154,
           120},{154,84},{170,84}}, color={0,0,127}));
-  connect(VSup1.V_flow, V1_flow) annotation (Line(points={{66,11},{66,20},{140,20},
-          {140,-16},{170,-16}}, color={0,0,127}));
+  connect(VSup1.V_flow, V1_flow) annotation (Line(points={{74,11},{74,20},{140,
+          20},{140,-16},{170,-16}},
+                                color={0,0,127}));
   connect(zon2.TRooAir, TRooAir2)
     annotation (Line(points={{155,64},{170,64}}, color={0,0,127}));
   connect(zon1.TRooAir, TRooAir1) annotation (Line(points={{157,-78},{168,-78},{
           168,-36},{170,-36}}, color={0,0,127}));
+  connect(vav1.port_b, TDisVAV1.port_a)
+    annotation (Line(points={{30,-20},{30,0},{40,0}}, color={0,127,255}));
+  connect(TDisVAV1.port_b, VSup1.port_a)
+    annotation (Line(points={{60,0},{64,0}}, color={0,127,255}));
+  connect(vav2.port_b, TDisVAV2.port_a)
+    annotation (Line(points={{30,82},{30,100},{32,100}}, color={0,127,255}));
+  connect(TDisVAV2.port_b, VSup2.port_a)
+    annotation (Line(points={{52,100},{56,100}}, color={0,127,255}));
+  connect(TDisVAV2.T, TDis2) annotation (Line(points={{42,111},{42,122},{158,
+          122},{158,100},{170,100}}, color={0,0,127}));
+  connect(TDisVAV1.T, TDis1) annotation (Line(points={{50,11},{50,22},{142,22},
+          {142,0},{170,0}}, color={0,0,127}));
   annotation (Diagram(
         coordinateSystem(preserveAspectRatio=false, extent={{-100,-140},{180,140}})), Icon(
         graphics={Rectangle(

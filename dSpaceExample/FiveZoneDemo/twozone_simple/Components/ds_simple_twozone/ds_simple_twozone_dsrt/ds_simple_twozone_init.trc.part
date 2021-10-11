@@ -1,0 +1,10 @@
+
+
+
+-- Type definitions for arrays
+typedef ds_simple_twozone_ArrayDT0_2 flt(64,IEEE)[2]
+typedef ds_simple_twozone_ArrayDT0_28 flt(64,IEEE)[28]
+typedef ds_simple_twozone_ArrayDT0_856 flt(64,IEEE)[856]
+typedef ds_simple_twozone_ArrayDT0_19117 flt(64,IEEE)[19117]
+
+

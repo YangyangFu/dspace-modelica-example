@@ -111,7 +111,7 @@
 			<Name type="key">twozone_outputs.CDL</Name>
 			<DisplayName type="key">twozone_outputs</DisplayName>
 			<Path type="key">.\twozone_outputs</Path>
-			<Flags type="key">41216</Flags>
+			<Flags type="key">8448</Flags>
 			<ExtendedFlags type="key">16</ExtendedFlags>
 			<Type type="key">14</Type>
 			<UniqueID type="key">72516321</UniqueID>
@@ -130,7 +130,7 @@
 			<Name type="key">ModelicaConstant.CDL</Name>
 			<DisplayName type="key">ModelicaConstant</DisplayName>
 			<Path type="key">.\ModelicaConstant</Path>
-			<Flags type="key">8448</Flags>
+			<Flags type="key">41216</Flags>
 			<ExtendedFlags type="key">16</ExtendedFlags>
 			<Type type="key">14</Type>
 			<UniqueID type="key">350858707</UniqueID>
@@ -138,7 +138,23 @@
 			<ItemInfoDate type="key">10/6/2021 2:28:43 PM</ItemInfoDate>
 			<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
 			<ItemInfoDocs type="key"/>
+			<ItemInfoDescr type="key"/>
 			<ItemInfoLog type="key"/>
+			<ItemInfoAddInfoDb type="key"/>
+			<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
+		</item>
+		<item>
+			<Component type="key">ProjectApplication</Component>
+			<Name type="key">twozone_simple.CDL</Name>
+			<DisplayName type="key">twozone_simple</DisplayName>
+			<Path type="key">.\twozone_simple</Path>
+			<Flags type="key">8448</Flags>
+			<ExtendedFlags type="key">16</ExtendedFlags>
+			<Type type="key">14</Type>
+			<UniqueID type="key">230432471</UniqueID>
+			<EntityID type="key">{7E600374-E3D7-496D-8CB0-B88094D31EFA}</EntityID>
+			<ItemInfoDate type="key">10/11/2021 5:47:04 PM</ItemInfoDate>
+			<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
 			<ItemInfoDescr type="key"/>
 			<ItemInfoAddInfoDb type="key"/>
 			<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
@@ -159,7 +175,7 @@
 				<Component type="key">ProjectApplication</Component>
 				<Type type="key">14</Type>
 				<ApplicationType type="key">3</ApplicationType>
-				<Flags type="key">41216</Flags>
+				<Flags type="key">8448</Flags>
 				<ItemInfoDate type="key">9/29/2021 6:06:13 PM</ItemInfoDate>
 				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
 				<ItemInfoDocs type="key"/>
@@ -177,7 +193,7 @@
 				<Component type="key">ProjectApplication</Component>
 				<Type type="key">14</Type>
 				<ApplicationType type="key">3</ApplicationType>
-				<Flags type="key">8448</Flags>
+				<Flags type="key">41216</Flags>
 				<ItemInfoDate type="key">10/6/2021 2:28:43 PM</ItemInfoDate>
 				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
 				<ItemInfoDocs type="key"/>
@@ -188,8 +204,26 @@
 				<DatabaseID type="key">-1</DatabaseID>
 				<EntityID type="key">{B6725FDA-87B8-4C13-9826-C9F863A29945}</EntityID>
 			</application>
+			<application>
+				<Name type="key">twozone_simple.CDL</Name>
+				<DisplayName type="key">twozone_simple</DisplayName>
+				<Path type="key">.\twozone_simple</Path>
+				<Component type="key">ProjectApplication</Component>
+				<Type type="key">14</Type>
+				<ApplicationType type="key">3</ApplicationType>
+				<Flags type="key">8448</Flags>
+				<ItemInfoDate type="key">10/11/2021 5:47:04 PM</ItemInfoDate>
+				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+				<ItemInfoDocs type="key"/>
+				<ItemInfoDescr type="key"/>
+				<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
+				<Log type="key"/>
+				<AddInfoDb type="key"/>
+				<DatabaseID type="key">-1</DatabaseID>
+				<EntityID type="key">{7E600374-E3D7-496D-8CB0-B88094D31EFA}</EntityID>
+			</application>
 		</applications>
-		<LastActiveApplication type="key">twozone_outputs</LastActiveApplication>
+		<LastActiveApplication type="key">ModelicaConstant</LastActiveApplication>
 	</ProjectApplication>
 	<PlatformManagement/>
 </Root>

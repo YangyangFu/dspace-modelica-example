@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<jobs>
+<abortmutex><mutexname>CfgDeskAbortMutex</mutexname><abortmsg>Abort requested. Waiting for already started jobs to finish.</abortmsg></abortmutex>
+ <job genre="execute">
+ <workingdir>D:/github/dspace-modelica-example/dSpaceExample/FiveZoneDemo/twozone_simple/Build/ds_simple_twozone/Compile/ds_simple_twozone</workingdir>
+ <startmsg>Making Makefile "ds_simple_twozone\ds_simple_twozone.mk" ...</startmsg>
+ <command>"C:\Program Files\dSPACE RCPHIL 2020-A\SCALEXIO\bin\dsmake.exe" -f ds_simple_twozone.mk</command>
+ <errmsg>Making "ds_simple_twozone\ds_simple_twozone.mk" failed</errmsg>
+ </job>
+ <job genre="execute">
+ <workingdir>D:/github/dspace-modelica-example/dSpaceExample/FiveZoneDemo/twozone_simple/Build/ds_simple_twozone/Compile</workingdir>
+ <startmsg>Making Makefile "ds_simple_twozone.mk" ...</startmsg>
+ <command>"C:\Program Files\dSPACE RCPHIL 2020-A\SCALEXIO\bin\dsmake.exe" -f ds_simple_twozone.mk</command>
+ <errmsg>Making "ds_simple_twozone.mk" failed</errmsg>
+ </job>
+</jobs>
+

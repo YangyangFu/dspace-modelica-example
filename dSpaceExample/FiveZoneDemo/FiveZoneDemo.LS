@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Root>
-	<Interpreter Version="2">
-		<Project>
-			<ScriptCount type="key">0</ScriptCount>
-		</Project>
-	</Interpreter>
 	<ProjectExperiment>
 		<viewflags>
 			<Name type="key">FiveZoneDemo.CDP</Name>
@@ -35,10 +30,14 @@
 			</item>
 			<item>
 				<Name type="key">twozone_outputs.CDL</Name>
-				<ViewFlags type="key">41</ViewFlags>
+				<ViewFlags type="key">0</ViewFlags>
 			</item>
 			<item>
 				<Name type="key">ModelicaConstant.CDL</Name>
+				<ViewFlags type="key">45</ViewFlags>
+			</item>
+			<item>
+				<Name type="key">twozone_simple.CDL</Name>
 				<ViewFlags type="key">0</ViewFlags>
 			</item>
 		</viewflags>
