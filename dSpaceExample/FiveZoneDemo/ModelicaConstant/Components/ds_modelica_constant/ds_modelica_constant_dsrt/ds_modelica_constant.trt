@@ -1,0 +1,154 @@
+-- ****************************************************************************
+--
+--  Trace file: ds_modelica_constant.trc
+--
+--  4.3 (02-May-2020)
+--  Fri Oct  8 16:56:56 2021
+--
+--  Copyright 2021, dSPACE GmbH. All rights reserved.
+--
+-- ****************************************************************************
+
+
+
+-- Type definitions for arrays
+typedef ds_modelica_constant_ArrayDT0_2 flt(64,IEEE)[2]
+typedef ds_modelica_constant_ArrayDT0_14 flt(64,IEEE)[14]
+
+
+-- ******** Model variables ***************************************************
+
+group "Model Root"
+  
+  
+	group "behavior" -- subsystem-group
+
+		p_0_ds_modelica_constant_real_T_0[0]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "y"
+		 flags:   OUTPUT|READONLY
+		}
+
+
+  
+  
+		group "behavior" -- subsystem-group
+
+			p_0_ds_modelica_constant_real_T_0[0]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "y"
+			 flags:   OUTPUT|READONLY
+			}
+
+
+			group "Sfunc" -- block-group
+			{
+			 block: "S-Function"
+			}
+				p_0_ds_modelica_constant_real_T_0[0]
+				{
+				 type:    flt(64,IEEE)*
+				 alias:   "Out1"
+				 flags:   OUTPUT|READONLY
+				}
+
+				p_1_ds_modelica_constant_real_T_0[2]
+				{
+				 type:    flt(64,IEEE)*
+				 alias:   "P1"
+				 flags:   PARAM
+				}
+
+
+			endgroup -- block-group "Sfunc"
+
+  
+  
+			group "Dymola Settings" -- subsystem-group
+
+
+
+
+
+			endgroup -- subsystem-group "Dymola Settings"
+  
+  
+			group "Modelica model2" -- subsystem-group
+
+
+
+
+
+			endgroup -- subsystem-group "Modelica model2"
+  
+  
+			group "compmodel" -- subsystem-group
+
+
+
+
+
+			endgroup -- subsystem-group "compmodel"
+  
+  
+			group "editmodel" -- subsystem-group
+
+
+
+
+
+			endgroup -- subsystem-group "editmodel"
+
+
+		endgroup -- subsystem-group "behavior"
+
+
+	endgroup -- subsystem-group "behavior"
+  
+  
+	group "output" -- subsystem-group
+
+
+
+  
+  
+		group "y" -- subsystem-group
+
+
+		endgroup -- subsystem-group "y"
+
+
+	endgroup -- subsystem-group "output"
+
+
+
+endgroup -- "Model Root"
+-- ******** Tunable Parameters ************************************************
+
+group "Tunable Parameters"
+
+
+endgroup
+
+-- ******** State Machine Data ************************************************
+
+-- No Stateflow chart within the model.
+
+
+-- ******** Labels ************************************************************
+
+-- Generation of labels turned off with TRCGenerateLabels option.
+
+
+-- ******** User variables from model_usr.trc *********************************
+
+-- RTI_USR_TRC_BEGIN
+
+-- No user file ds_modelica_constant_usr.trc found.
+
+-- RTI_USR_TRC_END
+
+-- ******** [EOF] *************************************************************
+

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<resultfilepaths> 
+      <applicationvariant_default name="default" 
+          application_image_file="D:\github\dspace-modelica-example\dSpaceExample\FiveZoneDemo\ModelicaConstant\Build\Results.tmp\ds_modelica_constant.x86" 
+          link_map_file="D:\github\dspace-modelica-example\dSpaceExample\FiveZoneDemo\ModelicaConstant\Build\Results.tmp\ds_modelica_constant.map" 
+      /> 
+</resultfilepaths> 

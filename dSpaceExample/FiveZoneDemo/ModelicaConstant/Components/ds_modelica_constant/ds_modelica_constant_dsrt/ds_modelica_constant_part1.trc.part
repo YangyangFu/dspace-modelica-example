@@ -1,0 +1,109 @@
+-- ******** Model variables ***************************************************
+
+group "Model Root"
+  
+  
+	group "behavior" -- subsystem-group
+
+		p_0_ds_modelica_constant_real_T_0[0]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "y"
+		 flags:   OUTPUT|READONLY
+		}
+
+
+  
+  
+		group "behavior" -- subsystem-group
+
+			p_0_ds_modelica_constant_real_T_0[0]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "y"
+			 flags:   OUTPUT|READONLY
+			}
+
+
+			group "Sfunc" -- block-group
+			{
+			 block: "S-Function"
+			}
+				p_0_ds_modelica_constant_real_T_0[0]
+				{
+				 type:    flt(64,IEEE)*
+				 alias:   "Out1"
+				 flags:   OUTPUT|READONLY
+				}
+
+				p_1_ds_modelica_constant_real_T_0[2]
+				{
+				 type:    flt(64,IEEE)*
+				 alias:   "P1"
+				 flags:   PARAM
+				}
+
+
+			endgroup -- block-group "Sfunc"
+
+  
+  
+			group "Dymola Settings" -- subsystem-group
+
+
+
+
+
+			endgroup -- subsystem-group "Dymola Settings"
+  
+  
+			group "Modelica model2" -- subsystem-group
+
+
+
+
+
+			endgroup -- subsystem-group "Modelica model2"
+  
+  
+			group "compmodel" -- subsystem-group
+
+
+
+
+
+			endgroup -- subsystem-group "compmodel"
+  
+  
+			group "editmodel" -- subsystem-group
+
+
+
+
+
+			endgroup -- subsystem-group "editmodel"
+
+
+		endgroup -- subsystem-group "behavior"
+
+
+	endgroup -- subsystem-group "behavior"
+  
+  
+	group "output" -- subsystem-group
+
+
+
+  
+  
+		group "y" -- subsystem-group
+
+
+		endgroup -- subsystem-group "y"
+
+
+	endgroup -- subsystem-group "output"
+
+
+
+endgroup -- "Model Root"

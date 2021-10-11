@@ -496,13 +496,14 @@ This is for
           "modelica://Buildings/Resources/Scripts/Dymola/Examples/VAVReheat/Guideline36.mos"
         "Simulate and plot"),
     experiment(
-      StopTime=172800,
+      StartTime=15724800,
+      StopTime=15811200,
       Tolerance=1e-06,
-      __Dymola_fixedstepsize=1,
+      __Dymola_fixedstepsize=0.0001,
       __Dymola_Algorithm="Euler"),
     Icon(coordinateSystem(extent={{-100,-100},{100,100}})),
     __Dymola_experimentFlags(Advanced(
-        InlineMethod=1,
-        InlineOrder=2,
-        InlineFixedStep=1)));
+        InlineMethod=0,
+        InlineOrder=4,
+        InlineFixedStep=0.001)));
 end FiveZoneG36Base;
