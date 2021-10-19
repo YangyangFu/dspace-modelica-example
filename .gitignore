@@ -80,4 +80,22 @@ fmiModelIdentifier.h'
 *.txt
 
 # dspace
-*/Build*
+*.sic
+*.mexw64
+*dymModelInfo.m
+*.c
+*.h 
+*.xml
+*.dat 
+*.map 
+*.out 
+*.mrk
+*.o86
+*.a 
+*Build Results/
+*Build/
+*Components/
+*.cfgx
+*.CDL
+*.CDP 
+*.LS

@@ -1,6 +1,6 @@
 function mInfo = dymModelInfo
 
-mInfo.ModelName = 'SimpleTwoZone';
+mInfo.ModelName = 'WeatherReader';
 mInfo.extIncDirs = '-I"D:/github/dspace-modelica-example/Libraries/Buildings 7.0.0/Resources/C-Sources"';
 mInfo.extLibDirs = '-L"C:/Program Files/Dymola 2021/Modelica/Library/Modelica 3.2.3/Resources/Library/win64"';
 mInfo.libLine = ' ModelicaIO ModelicaMatIO ModelicaStandardTables zlib';
