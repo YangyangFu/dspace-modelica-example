@@ -1,9 +1,8 @@
 within dSpaceExample.Debug;
-model WeatherFromCSV
+model TableSource
   Modelica.Blocks.Sources.CombiTimeTable timTab(
-    tableOnFile=true,
-    tableName="tab",
-    fileName=ModelicaServices.ExternalReferences.loadResource("modelica://dSpaceExample/weather.txt"),
+    tableOnFile=false,
+    table=[0.0,20; 12*3600,35; 24*3600,20],
     extrapolation=Modelica.Blocks.Types.Extrapolation.Periodic)
     annotation (Placement(transformation(extent={{-60,-10},{-40,10}})));
 
@@ -23,4 +22,4 @@ equation
         InlineMethod=4,
         InlineOrder=4,
         InlineFixedStep=0.001)));
-end WeatherFromCSV;
+end TableSource;
