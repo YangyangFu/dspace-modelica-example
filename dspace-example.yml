@@ -1,0 +1,14 @@
+name: dspace-example
+channels:
+  - pytorch
+  - dglteam
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.8
+  - pip
+  - pandas
+  - matplotlib
+  - pvlib-python
+  - pip:
+    - buildingspy

@@ -45,6 +45,7 @@ wrapped_log.txt
 # .mat output files #
 #####################
 *.mat
+!weather_dspace.mat
 
 # Ignore certain sphinx-generated files #
 #########################################

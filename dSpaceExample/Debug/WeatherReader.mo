@@ -1,9 +1,9 @@
 within dSpaceExample.Debug;
 model WeatherReader "Test weather reader in dspace"
   Buildings.BoundaryConditions.WeatherData.ReaderTMY3 weaDat(
-      computeWetBulbTemperature=false, filNam=
-        Modelica.Utilities.Files.loadResource(
-        "modelica://Buildings/Resources/weatherdata/DRYCOLD.mos"))
+      computeWetBulbTemperature=true, filNam=
+        ModelicaServices.ExternalReferences.loadResource(
+        "modelica://Buildings/Resources/weatherdata/USA_IL_Chicago-OHare.Intl.AP.725300_TMY3.mos"))
     annotation (Placement(transformation(extent={{-80,40},{-60,60}})));
   Buildings.BoundaryConditions.WeatherData.Bus
                                      weaBus annotation (Placement(
