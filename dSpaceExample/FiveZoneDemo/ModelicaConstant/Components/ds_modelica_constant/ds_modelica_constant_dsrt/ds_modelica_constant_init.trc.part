@@ -1,8 +1,0 @@
-
-
-
--- Type definitions for arrays
-typedef ds_modelica_constant_ArrayDT0_2 flt(64,IEEE)[2]
-typedef ds_modelica_constant_ArrayDT0_14 flt(64,IEEE)[14]
-
-
