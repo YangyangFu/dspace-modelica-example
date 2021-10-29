@@ -2,7 +2,7 @@ within dSpaceExample.Debug.Examples;
 model TwoVAVTerminals
   extends Modelica.Icons.Example;
 
-  dSpaceExample.Debug.TwoVAVTerminals vav
+  dSpaceExample.Debug.TwoVAVTerminalsWithUnitConversion vav
     annotation (Placement(transformation(extent={{-10,-12},{10,8}})));
   Modelica.Blocks.Sources.Step yvav1(
     height=1,

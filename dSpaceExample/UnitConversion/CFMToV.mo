@@ -1,5 +1,5 @@
 within dSpaceExample.UnitConversion;
-model UnitToVoltageDSpace
+model CFMToV
   Modelica.Blocks.Interfaces.RealInput K "Signal for VAV damper"
     annotation (Placement(transformation(extent={{-140,-20},{-100,20}})));
   Modelica.Blocks.Interfaces.RealOutput F annotation (Placement(transformation(
@@ -16,4 +16,4 @@ model UnitToVoltageDSpace
           lineColor={0,0,255},
           textString="%name")}), Diagram(coordinateSystem(preserveAspectRatio=
             false)));
-end UnitToVoltageDSpace;
+end CFMToV;

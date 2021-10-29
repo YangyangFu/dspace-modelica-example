@@ -1,5 +1,5 @@
 within dSpaceExample.Debug;
-model TwoVAVTerminals
+model TwoVAVTerminalsWithUnitConversion
   replaceable package MediumA = Buildings.Media.Air;
   replaceable package MediumW = Buildings.Media.Water;
   parameter Modelica.SIunits.MassFlowRate m_flow_nominal=0.75
@@ -71,11 +71,11 @@ model TwoVAVTerminals
     "Volume flow rate from port_a to port_b" annotation (Placement(
         transformation(extent={{160,-26},{180,-6}}), iconTransformation(extent={
             {160,-26},{180,-6}})));
-  Buildings.Fluid.Sensors.TemperatureTwoPort TDisVAV1(redeclare package Medium =
-        MediumA, m_flow_nominal=m_flow_nominal)
+  Buildings.Fluid.Sensors.TemperatureTwoPort TDisVAV1(redeclare package Medium
+      = MediumA, m_flow_nominal=m_flow_nominal)
     annotation (Placement(transformation(extent={{40,-10},{60,10}})));
-  Buildings.Fluid.Sensors.TemperatureTwoPort TDisVAV2(redeclare package Medium =
-        MediumA, m_flow_nominal=m_flow_nominal)
+  Buildings.Fluid.Sensors.TemperatureTwoPort TDisVAV2(redeclare package Medium
+      = MediumA, m_flow_nominal=m_flow_nominal)
     annotation (Placement(transformation(extent={{32,90},{52,110}})));
   Modelica.Blocks.Interfaces.RealOutput TDis2
     "Temperature of the passing fluid"
@@ -83,6 +83,20 @@ model TwoVAVTerminals
   Modelica.Blocks.Interfaces.RealOutput TDis1
     "Temperature of the passing fluid"
     annotation (Placement(transformation(extent={{160,-10},{180,10}})));
+  UnitConversion.VoltageToUnit volToUni_yvav2(
+    vol_min=2,
+    vol_max=10,
+    y_min=0,
+    y_max=1) annotation (Placement(transformation(extent={{-60,60},{-40,80}})));
+  UnitConversion.VoltageToUnit volToUni_yvav1(
+    vol_min=2,
+    vol_max=10,
+    y_min=0,
+    y_max=1) annotation (Placement(transformation(extent={{-60,-10},{-40,10}})));
+  UnitConversion.VToCFM vToCFM_vav2
+    annotation (Placement(transformation(extent={{112,110},{132,130}})));
+  UnitConversion.VToCFM vToCFM_vav1
+    annotation (Placement(transformation(extent={{100,10},{120,30}})));
 equation
   connect(zer.y, vav1.yVal) annotation (Line(points={{-73,40},{-4,40},{-4,-48},{
           16,-48}}, color={0,0,127}));
@@ -113,14 +127,22 @@ equation
           100},{148,-78}}, color={0,127,255}));
   connect(VSup1.port_b, rooSin.ports[3]) annotation (Line(points={{84,0},{126,0},
           {126,-46},{150,-46},{150,-78},{150.667,-78}}, color={0,127,255}));
-  connect(yVAV2, vav2.yVAV)
-    annotation (Line(points={{-120,70},{16,70}}, color={0,0,127}));
-  connect(yVAV1, vav1.yVAV) annotation (Line(points={{-120,0},{-54,0},{-54,-32},
-          {16,-32}}, color={0,0,127}));
-  connect(VSup2.V_flow, V2_flow) annotation (Line(points={{66,111},{66,116},{
-          154,116},{154,84},{170,84}}, color={0,0,127}));
-  connect(VSup1.V_flow, V1_flow) annotation (Line(points={{74,11},{74,18},{138,
-          18},{138,-16},{170,-16}}, color={0,0,127}));
+  connect(volToUni_yvav2.y, vav2.yVAV)
+    annotation (Line(points={{-39,70},{16,70}}, color={0,0,127}));
+  connect(volToUni_yvav2.vol, yVAV2)
+    annotation (Line(points={{-62,70},{-120,70}}, color={0,0,127}));
+  connect(vav1.yVAV, volToUni_yvav1.y) annotation (Line(points={{16,-32},{0,-32},
+          {0,0},{-39,0}}, color={0,0,127}));
+  connect(volToUni_yvav1.vol, yVAV1)
+    annotation (Line(points={{-62,0},{-120,0}}, color={0,0,127}));
+  connect(VSup2.V_flow, vToCFM_vav2.V_flow)
+    annotation (Line(points={{66,111},{66,120},{110,120}}, color={0,0,127}));
+  connect(vToCFM_vav2.CFM, V2_flow) annotation (Line(points={{133,120},{154,120},
+          {154,84},{170,84}}, color={0,0,127}));
+  connect(VSup1.V_flow, vToCFM_vav1.V_flow)
+    annotation (Line(points={{74,11},{74,20},{98,20}}, color={0,0,127}));
+  connect(vToCFM_vav1.CFM, V1_flow) annotation (Line(points={{121,20},{138,20},
+          {138,-16},{170,-16}}, color={0,0,127}));
   annotation (Diagram(
         coordinateSystem(preserveAspectRatio=false, extent={{-100,-140},{180,140}})), Icon(
         graphics={Rectangle(
@@ -141,4 +163,4 @@ equation
         InlineMethod=4,
         InlineOrder=4,
         InlineFixedStep=0.001)));
-end TwoVAVTerminals;
+end TwoVAVTerminalsWithUnitConversion;
