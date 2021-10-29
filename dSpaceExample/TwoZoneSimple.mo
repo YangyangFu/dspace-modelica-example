@@ -96,11 +96,11 @@ model TwoZoneSimple
                                                 "Room air temperature"
     annotation (Placement(transformation(extent={{160,-46},{180,-26}}),
         iconTransformation(extent={{160,-46},{180,-26}})));
-  Buildings.Fluid.Sensors.TemperatureTwoPort TDisVAV1(redeclare package Medium
-      = MediumA, m_flow_nominal=m_flow_nominal)
+  Buildings.Fluid.Sensors.TemperatureTwoPort TDisVAV1(redeclare package Medium =
+        MediumA, m_flow_nominal=m_flow_nominal)
     annotation (Placement(transformation(extent={{40,-10},{60,10}})));
-  Buildings.Fluid.Sensors.TemperatureTwoPort TDisVAV2(redeclare package Medium
-      = MediumA, m_flow_nominal=m_flow_nominal)
+  Buildings.Fluid.Sensors.TemperatureTwoPort TDisVAV2(redeclare package Medium =
+        MediumA, m_flow_nominal=m_flow_nominal)
     annotation (Placement(transformation(extent={{32,90},{52,110}})));
   Modelica.Blocks.Interfaces.RealOutput TDis2
     "Temperature of the passing fluid"
