@@ -57,4 +57,39 @@ print(weather_python[['lat','lon','pAtm','TDryBul']])
 
 weather_python.to_csv("weather_python.csv",index_label="time")
 
-# call matlab to conver csv to desired mat file format for dspace
+# interpolate to 1 hour weather data
+def interp(df, new_index):
+    """Return a new DataFrame with all columns values interpolated
+    to the new_index values."""
+    df_out = pd.DataFrame(index=new_index)
+    df_out.index.name = df.index.name
+
+    for colname, col in df.iteritems():
+        df_out[colname] = np.interp(new_index, df.index, col)
+
+    return df_out
+
+#interpolate one minute data
+ts = weather_python.index[0]
+te = weather_python.index[-1]
+time_intp = np.arange(ts,te+1,3600) 
+weather_hourly = interp(weather_python, time_intp)
+#average every 15 minutes
+weather_hourly.to_csv('weather_hourly.csv')
+
+# write to modelica txt format
+outTable = 'weather_hourly.txt'
+if os.path.exists(outTable):
+	os.remove(outTable)
+nRow=len(weather_hourly.index)
+column_names = weather_hourly.columns
+
+f = open(outTable,'w')
+f.writelines('#1 \n')
+f.writelines('double tab('+str(nRow)+','+str(len(column_names))+')\n')
+for i in range(nRow):
+    strs = str(weather_hourly.index[i])+' '
+    for col in column_names:
+        strs += str(weather_hourly.loc[weather_hourly.index[i],col])+' '
+    f.writelines(strs+'\n')
+f.close()
