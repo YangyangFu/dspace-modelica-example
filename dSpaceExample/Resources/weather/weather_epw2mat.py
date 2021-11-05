@@ -88,8 +88,10 @@ f = open(outTable,'w')
 f.writelines('#1 \n')
 f.writelines('double tab('+str(nRow)+','+str(len(column_names))+')\n')
 for i in range(nRow):
-    strs = str(weather_hourly.index[i])+' '
+    strs = str(weather_hourly.index[i])+','
     for col in column_names:
-        strs += str(weather_hourly.loc[weather_hourly.index[i],col])+' '
+        strs += str(weather_hourly.loc[weather_hourly.index[i],col])+','
+    # replace the last , as  ;
+    strs=strs[:-1]+";"
     f.writelines(strs+'\n')
 f.close()

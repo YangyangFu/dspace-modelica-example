@@ -2,8 +2,12 @@ FiveZoneG36
 FiveZoneG36Base
 FiveZoneG36Demo
 ModelicaConstant
-TwoZoneSimple
+OneZone
+OneZoneVAV
+TwoZone
+TwoZoneVAV
 Example
 BaseClass
 Debug
 UnitConversion
+WeatherTable

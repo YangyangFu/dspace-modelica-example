@@ -2,8 +2,6 @@ within dSpaceExample.Example;
 model TwoZoneSimple "Simplified VAV"
   extends Modelica.Icons.Example;
 
-  dSpaceExample.TwoZoneSimple twoZon
-    annotation (Placement(transformation(extent={{-10,-10},{10,10}})));
   Modelica.Blocks.Sources.Step yvav1(
     height=1,
     offset=0,
