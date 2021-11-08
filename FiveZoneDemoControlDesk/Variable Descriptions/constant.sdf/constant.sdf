@@ -1,0 +1,15 @@
+[System]
+Version=2.2
+SystemType=SingleProcessorSystem
+DAQService=DsDAQ
+DsDAQBackground=1
+Status=Start
+File=constant.rta
+RTP=1
+
+[1]
+ID=b7fe1349-1e24-4542-b77e-f4293f3f6f96
+Type=DSRTPC
+ServiceID=1
+TraceFile=modelica_constant.trc
+
