@@ -100,3 +100,6 @@ fmiModelIdentifier.h'
 *.CDL
 *.CDP 
 *.LS
+
+## 
+*LocalCopies*
