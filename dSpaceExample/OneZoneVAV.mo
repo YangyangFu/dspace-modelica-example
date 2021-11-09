@@ -58,8 +58,8 @@ model OneZoneVAV
         extent={{-10,-10},{10,10}},
         rotation=0,
         origin={14,60})));
-  Buildings.Fluid.Sensors.TemperatureTwoPort TDisVAV1(redeclare package Medium
-      = MediumA, m_flow_nominal=m_flow_nominal)
+  Buildings.Fluid.Sensors.TemperatureTwoPort TDisVAV1(redeclare package Medium =
+        MediumA, m_flow_nominal=m_flow_nominal)
     annotation (Placement(transformation(extent={{-20,50},{0,70}})));
   Modelica.Blocks.Interfaces.RealOutput TDis "Temperature of the passing fluid"
     annotation (Placement(transformation(extent={{180,70},{200,90}})));

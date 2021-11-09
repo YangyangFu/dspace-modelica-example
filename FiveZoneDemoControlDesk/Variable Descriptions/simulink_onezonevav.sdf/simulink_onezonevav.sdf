@@ -1,0 +1,15 @@
+[System]
+Version=2.2
+SystemType=SingleProcessorSystem
+DAQService=DsDAQ
+DsDAQBackground=1
+Status=Start
+File=simulink_onezonevav.rta
+RTP=1
+
+[1]
+ID=f0c46041-7fe4-4ebb-b10a-1d943a55c854
+Type=DSRTPC
+ServiceID=1
+TraceFile=onezonevav.trc
+
