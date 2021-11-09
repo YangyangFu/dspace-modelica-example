@@ -21,7 +21,7 @@ model TwoZoneVAV
     use_T_in=false,
     T=285.15,
     use_m_flow_in=false,
-    nPorts=2) "Source as cooling coil"            annotation (Placement(
+    nPorts=3) "Source as cooling coil"            annotation (Placement(
         transformation(
         extent={{-10,-10},{10,10}},
         rotation=0,
@@ -126,14 +126,15 @@ equation
   connect(vav1.port_b,TDisVAV1. port_a)
     annotation (Line(points={{-30,-60},{-30,-40},{-16,-40}},
                                                       color={0,127,255}));
-  connect(coiSou.ports[1], vav1.port_a) annotation (Line(points={{-80,-18},{-52,
-          -18},{-52,-116},{-30,-116},{-30,-100}}, color={0,127,255}));
+  connect(coiSou.ports[1], vav1.port_a) annotation (Line(points={{-80,-17.3333},
+          {-52,-17.3333},{-52,-116},{-30,-116},{-30,-100}},
+                                                  color={0,127,255}));
   connect(TDisVAV1.port_b, VSup1.port_a)
     annotation (Line(points={{4,-40},{60,-40}}, color={0,127,255}));
   connect(VSup1.port_b, zon1.supplyAir) annotation (Line(points={{80,-40},{100,
           -40},{100,-54},{116,-54}}, color={0,127,255}));
-  connect(coiSou.ports[2], res.port_a) annotation (Line(points={{-80,-22},{-62,
-          -22},{-62,-120},{-18,-120}}, color={0,127,255}));
+  connect(coiSou.ports[2], res.port_a) annotation (Line(points={{-80,-20},{-62,
+          -20},{-62,-120},{-18,-120}}, color={0,127,255}));
   connect(res.port_b, sin.ports[2]) annotation (Line(points={{2,-120},{82,-120},
           {82,-120},{160,-120}}, color={0,127,255}));
   connect(TDisVAV1.T, TDis1)
@@ -171,6 +172,8 @@ equation
       horizontalAlignment=TextAlignment.Right));
   connect(zon2.returnAir, sin.ports[3]) annotation (Line(points={{116,82},{94,
           82},{94,-122.667},{160,-122.667}}, color={0,127,255}));
+  connect(coiSou.ports[3], vav2.port_a) annotation (Line(points={{-80,-22.6667},
+          {-30,-22.6667},{-30,40}}, color={0,127,255}));
   annotation (Diagram(
         coordinateSystem(preserveAspectRatio=false, extent={{-100,-140},{180,140}})), Icon(
         graphics={Rectangle(
