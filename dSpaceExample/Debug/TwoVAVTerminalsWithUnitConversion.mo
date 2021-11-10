@@ -83,12 +83,12 @@ model TwoVAVTerminalsWithUnitConversion
   Modelica.Blocks.Interfaces.RealOutput TDis1
     "Temperature of the passing fluid"
     annotation (Placement(transformation(extent={{160,-10},{180,10}})));
-  UnitConversion.VoltageToUnit volToUni_yvav2(
+  UnitConversion.FromAnalog volToUni_yvav2(
     vol_min=2,
     vol_max=10,
     y_min=0,
     y_max=1) annotation (Placement(transformation(extent={{-60,60},{-40,80}})));
-  UnitConversion.VoltageToUnit volToUni_yvav1(
+  UnitConversion.FromAnalog volToUni_yvav1(
     vol_min=2,
     vol_max=10,
     y_min=0,
@@ -129,11 +129,11 @@ equation
           {126,-46},{150,-46},{150,-78},{150.667,-78}}, color={0,127,255}));
   connect(volToUni_yvav2.y, vav2.yVAV)
     annotation (Line(points={{-39,70},{16,70}}, color={0,0,127}));
-  connect(volToUni_yvav2.vol, yVAV2)
+  connect(volToUni_yvav2.v, yVAV2)
     annotation (Line(points={{-62,70},{-120,70}}, color={0,0,127}));
   connect(vav1.yVAV, volToUni_yvav1.y) annotation (Line(points={{16,-32},{0,-32},
           {0,0},{-39,0}}, color={0,0,127}));
-  connect(volToUni_yvav1.vol, yVAV1)
+  connect(volToUni_yvav1.v, yVAV1)
     annotation (Line(points={{-62,0},{-120,0}}, color={0,0,127}));
   connect(VSup2.V_flow, vToCFM_vav2.V_flow)
     annotation (Line(points={{66,111},{66,120},{110,120}}, color={0,0,127}));

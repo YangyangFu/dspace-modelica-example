@@ -57,8 +57,8 @@ model TwoZoneVAVUnitConverted
         extent={{-10,-10},{10,10}},
         rotation=0,
         origin={70,-40})));
-  Buildings.Fluid.Sensors.TemperatureTwoPort TDisVAV1(redeclare package Medium
-      = MediumA, m_flow_nominal=m_flow_nominal)
+  Buildings.Fluid.Sensors.TemperatureTwoPort TDisVAV1(redeclare package Medium =
+        MediumA, m_flow_nominal=m_flow_nominal)
     annotation (Placement(transformation(extent={{-16,-50},{4,-30}})));
   Modelica.Blocks.Interfaces.RealOutput TDis1
     "Temperature of the passing fluid"
@@ -91,8 +91,8 @@ model TwoZoneVAVUnitConverted
     m_flow_nominal=m_flow_nominal,
     VRoo=VRoo) "Zone for core of buildings (azimuth will be neglected)"
     annotation (Placement(transformation(extent={{-40,40},{0,80}})));
-  Buildings.Fluid.Sensors.TemperatureTwoPort TDisVAV2(redeclare package Medium
-      = MediumA, m_flow_nominal=m_flow_nominal)
+  Buildings.Fluid.Sensors.TemperatureTwoPort TDisVAV2(redeclare package Medium =
+        MediumA, m_flow_nominal=m_flow_nominal)
     annotation (Placement(transformation(extent={{-16,90},{4,110}})));
   Buildings.Fluid.Sensors.VolumeFlowRate VSup2(
     redeclare package Medium = MediumA,
@@ -166,6 +166,28 @@ model TwoZoneVAVUnitConverted
     v_min=0,
     v_max=5) "10c-40c mapping to 0-5v"
     annotation (Placement(transformation(extent={{134,-220},{154,-200}})));
+  Modelica.Blocks.Interfaces.RealOutput TOut "Outdoor air temp" annotation (
+      Placement(transformation(extent={{180,230},{200,250}}),
+        iconTransformation(extent={{180,90},{200,110}})));
+  Modelica.Blocks.Interfaces.RealOutput RHOut "Outdoor air rh" annotation (
+      Placement(transformation(extent={{180,210},{200,230}}),
+        iconTransformation(extent={{180,90},{200,110}})));
+  UnitConversion.ToAnolog toV_TOut(
+    x_min=-20,
+    x_max=120,
+    v_min=0,
+    v_max=10) "-20F-120F  mapping to 0 - 5V"
+    annotation (Placement(transformation(extent={{130,260},{150,280}})));
+  UnitConversion.ToAnolog toV_RHOut(
+    x_min=0,
+    x_max=100,
+    v_min=0,
+    v_max=10) "1-100 mapping to 0 - 10V"
+    annotation (Placement(transformation(extent={{130,230},{150,250}})));
+  UnitConversion.KToF kToF_TOut
+    annotation (Placement(transformation(extent={{90,260},{110,280}})));
+  Modelica.Blocks.Math.Gain gain(k=100)
+    annotation (Placement(transformation(extent={{92,230},{112,250}})));
 equation
   connect(weaBus, zon1.weaBus) annotation (Line(
       points={{-50,130},{108,130},{108,-38},{122,-38}},
@@ -264,6 +286,30 @@ equation
           158,-16},{48,-16},{48,-210},{102,-210}}, color={0,0,127}));
   connect(toV5.v, TRooAir1) annotation (Line(points={{155,-210},{170,-210},{170,
           -80},{190,-80}}, color={0,0,127}));
+  connect(kToF_TOut.F, toV_TOut.x) annotation (Line(points={{111,270},{120.5,
+          270},{120.5,270},{128,270}}, color={0,0,127}));
+  connect(weaBus.TDryBul, kToF_TOut.K) annotation (Line(
+      points={{-50,130},{-50,270},{88,270}},
+      color={255,204,51},
+      thickness=0.5), Text(
+      string="%first",
+      index=-1,
+      extent={{-6,3},{-6,3}},
+      horizontalAlignment=TextAlignment.Right));
+  connect(toV_TOut.v, TOut) annotation (Line(points={{151,270},{168,270},{168,
+          240},{190,240}}, color={0,0,127}));
+  connect(toV_RHOut.v, RHOut) annotation (Line(points={{151,240},{164,240},{164,
+          220},{190,220}}, color={0,0,127}));
+  connect(gain.y, toV_RHOut.x)
+    annotation (Line(points={{113,240},{128,240}}, color={0,0,127}));
+  connect(weaBus.relHum, gain.u) annotation (Line(
+      points={{-50,130},{-50,240},{90,240}},
+      color={255,204,51},
+      thickness=0.5), Text(
+      string="%first",
+      index=-1,
+      extent={{-6,3},{-6,3}},
+      horizontalAlignment=TextAlignment.Right));
   annotation (Diagram(
         coordinateSystem(preserveAspectRatio=false, extent={{-100,-140},{180,140}})), Icon(
         graphics={Rectangle(
