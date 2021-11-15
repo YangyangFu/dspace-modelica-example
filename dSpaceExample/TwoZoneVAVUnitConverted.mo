@@ -311,14 +311,15 @@ equation
       extent={{-6,3},{-6,3}},
       horizontalAlignment=TextAlignment.Right));
   annotation (Diagram(
-        coordinateSystem(preserveAspectRatio=false, extent={{-100,-140},{180,140}})), Icon(
+        coordinateSystem(preserveAspectRatio=false, extent={{-100,-240},{180,300}})), Icon(
+        coordinateSystem(extent={{-100,-240},{180,300}}),
         graphics={Rectangle(
-          extent={{-100,100},{100,-100}},
+          extent={{-102,300},{102,-240}},
           lineColor={0,0,127},
           fillColor={255,255,255},
           fillPattern=FillPattern.Solid),
         Text(
-          extent={{-159,152},{141,112}},
+          extent={{-157,344},{143,304}},
           lineColor={0,0,255},
           textString="%name")}),
     experiment(
