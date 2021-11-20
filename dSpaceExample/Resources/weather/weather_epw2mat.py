@@ -11,7 +11,7 @@ import sys
 # 1. assume the weather file is simulated in Modleica first, and we have the results file as weatherModelica.mat
 
 # 2. post-process the result mat file to generate new weather data in "mat" for HIL implementation.
-weather_modelica = Reader("WeatherReader.mat", "dymola")
+weather_modelica = Reader("ChicagoWeatherReader.mat", "dymola")
 print(weather_modelica.values("weaBus.HDirNor"))
 
 names = [
@@ -69,7 +69,7 @@ def interp(df, new_index):
 
     return df_out
 
-#interpolate one minute data
+#interpolate one hour data
 ts = weather_python.index[0]
 te = weather_python.index[-1]
 time_intp = np.arange(ts,te+1,3600) 
@@ -86,11 +86,36 @@ column_names = weather_hourly.columns
 
 f = open(outTable,'w')
 f.writelines('#1 \n')
-f.writelines('double tab('+str(nRow)+','+str(len(column_names))+')\n')
+f.writelines('double tab('+str(nRow)+','+str(len(column_names)+1)+')\n')
 for i in range(nRow):
-    strs = str(weather_hourly.index[i])+','
+    strs = str(weather_hourly.index[i])+' '
     for col in column_names:
-        strs += str(weather_hourly.loc[weather_hourly.index[i],col])+','
+        strs += str(weather_hourly.loc[weather_hourly.index[i],col])+' '
+    # replace the last , as  ;
+    strs=strs[:-1]
+    f.writelines(strs+'\n')
+f.close()
+
+# offset start time in HIL: dspace cannot only start simulation from t=0, 
+#we need sync the time between dspace time and modelica time if modelica model needs start from a nonzero time.
+starttime=212*24*3600. 
+endtime = starttime + 7*24*3600. # only copy past one week data
+
+# write to modelica txt format and need to copy to weather model developed for dspace modelica running
+outTable = 'weather_hourly_fordspace.txt'
+if os.path.exists(outTable):
+	os.remove(outTable)
+weather_slice=weather_hourly.loc[starttime:endtime,:]
+nRow=len(weather_slice.index)
+column_names = weather_slice.columns
+
+f = open(outTable,'w')
+f.writelines('#1 \n')
+f.writelines('double tab('+str(nRow)+','+str(len(column_names)+1)+')\n')
+for i in range(nRow):
+    strs = str(weather_slice.index[i]-starttime)+','
+    for col in column_names:
+        strs += str(weather_slice.loc[weather_slice.index[i],col])+','
     # replace the last , as  ;
     strs=strs[:-1]+";"
     f.writelines(strs+'\n')

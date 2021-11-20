@@ -30,9 +30,9 @@ model TwoZoneVAVUnitConverted
     m_flow_nominal=m_flow_nominal,
     dp_nominal=220 + 20)
     annotation (Placement(transformation(extent={{-18,-130},{2,-110}})));
-  Modelica.Blocks.Interfaces.RealOutput TRooAir1 "Room air temperature"
-    annotation (Placement(transformation(extent={{180,-90},{200,-70}}),
-        iconTransformation(extent={{180,-90},{200,-70}})));
+  Modelica.Blocks.Interfaces.RealOutput TRooAir1_V "Room air temperature"
+    annotation (Placement(transformation(extent={{180,0},{200,20}}),
+        iconTransformation(extent={{180,0},{200,20}})));
   WeatherTable.Chicago weaDat "Chicago"
     annotation (Placement(transformation(extent={{-100,98},{-80,120}})));
   Buildings.Fluid.Sources.Boundary_pT sin(
@@ -60,31 +60,31 @@ model TwoZoneVAVUnitConverted
   Buildings.Fluid.Sensors.TemperatureTwoPort TDisVAV1(redeclare package Medium =
         MediumA, m_flow_nominal=m_flow_nominal)
     annotation (Placement(transformation(extent={{-16,-50},{4,-30}})));
-  Modelica.Blocks.Interfaces.RealOutput TDis1
-    "Temperature of the passing fluid"
-    annotation (Placement(transformation(extent={{180,-20},{200,0}}),
-        iconTransformation(extent={{180,-20},{200,0}})));
-  Modelica.Blocks.Interfaces.RealOutput V1_flow
+  Modelica.Blocks.Interfaces.RealOutput TDis1_V
+    "Temperature of the passing fluid" annotation (Placement(transformation(
+          extent={{180,40},{200,60}}), iconTransformation(extent={{180,40},{200,
+            60}})));
+  Modelica.Blocks.Interfaces.RealOutput V1_flow_V
     "Volume flow rate from port_a to port_b" annotation (Placement(
-        transformation(extent={{180,-34},{200,-14}}),iconTransformation(extent={{180,-50},
-            {200,-30}})));
+        transformation(extent={{180,-34},{200,-14}}), iconTransformation(extent=
+           {{180,20},{200,40}})));
   Modelica.Blocks.Sources.Constant zer(k=0)
     annotation (Placement(transformation(extent={{-100,10},{-80,30}})));
   Modelica.Blocks.Interfaces.RealInput yVAV1 "Voltage signal for VAV damper"
     annotation (Placement(transformation(extent={{-140,-80},{-100,-40}})));
   Modelica.Blocks.Interfaces.RealInput yVAV2 "Voltage signal for VAV damper"
     annotation (Placement(transformation(extent={{-140,40},{-100,80}})));
-  Modelica.Blocks.Interfaces.RealOutput TDis2
-    "Temperature of the passing fluid"
-    annotation (Placement(transformation(extent={{180,90},{200,110}}),
-        iconTransformation(extent={{180,90},{200,110}})));
-  Modelica.Blocks.Interfaces.RealOutput TRooAir2 "Room air temperature"
-    annotation (Placement(transformation(extent={{180,34},{200,54}}),
-        iconTransformation(extent={{180,20},{200,40}})));
-  Modelica.Blocks.Interfaces.RealOutput V2_flow
+  Modelica.Blocks.Interfaces.RealOutput TDis2_V
+    "Temperature of the passing fluid" annotation (Placement(transformation(
+          extent={{180,-60},{200,-40}}), iconTransformation(extent={{180,-60},{
+            200,-40}})));
+  Modelica.Blocks.Interfaces.RealOutput TRooAir2_V "Room air temperature"
+    annotation (Placement(transformation(extent={{180,-100},{200,-80}}),
+        iconTransformation(extent={{180,-100},{200,-80}})));
+  Modelica.Blocks.Interfaces.RealOutput V2_flow_V
     "Volume flow rate from port_a to port_b" annotation (Placement(
-        transformation(extent={{180,66},{200,86}}), iconTransformation(extent={{180,50},
-            {200,70}})));
+        transformation(extent={{180,-80},{200,-60}}), iconTransformation(extent=
+           {{180,-80},{200,-60}})));
   Buildings.Examples.VAVReheat.ThermalZones.VAVBranch vav2(
     redeclare package MediumA = MediumA,
     redeclare package MediumW = MediumW,
@@ -108,13 +108,13 @@ model TwoZoneVAVUnitConverted
     lat=weaDat.lat) "Thermal envelope of single zone"
     annotation (Placement(transformation(extent={{116,64},{156,104}})));
   UnitConversion.FromAnalog volToUni_yvav2(
-    v_min=0,
-    v_max=5,
+    v_min=2,
+    v_max=10,
     y_min=0,
     y_max=1) annotation (Placement(transformation(extent={{-88,50},{-68,70}})));
   UnitConversion.FromAnalog volToUni_yvav1(
-    v_min=0,
-    v_max=5,
+    v_min=2,
+    v_max=10,
     y_min=0,
     y_max=1)
     annotation (Placement(transformation(extent={{-88,-70},{-68,-50}})));
@@ -129,22 +129,22 @@ model TwoZoneVAVUnitConverted
   UnitConversion.KToF kToF
     annotation (Placement(transformation(extent={{100,194},{120,214}})));
   UnitConversion.ToAnolog toV1(
-    x_min=32,
-    x_max=122,
+    x_min=45,
+    x_max=95,
     v_min=0,
     v_max=5) "0C-50C mapping to 0 - 5V"
     annotation (Placement(transformation(extent={{130,194},{150,214}})));
   UnitConversion.KToF kToF1
     annotation (Placement(transformation(extent={{100,134},{120,154}})));
   UnitConversion.ToAnolog toV2(
-    x_min=50,
-    x_max=104,
+    x_min=25,
+    x_max=125,
     v_min=0,
     v_max=5) "10c-40c mapping to 0-5v"
     annotation (Placement(transformation(extent={{130,134},{150,154}})));
   UnitConversion.ToAnolog toV3(
-    x_min=32,
-    x_max=122,
+    x_min=45,
+    x_max=95,
     v_min=0,
     v_max=5) "0C-50C mapping to 0 - 5V"
     annotation (Placement(transformation(extent={{134,-160},{154,-140}})));
@@ -161,17 +161,17 @@ model TwoZoneVAVUnitConverted
   UnitConversion.KToF kToF3
     annotation (Placement(transformation(extent={{104,-220},{124,-200}})));
   UnitConversion.ToAnolog toV5(
-    x_min=50,
-    x_max=104,
+    x_min=25,
+    x_max=125,
     v_min=0,
     v_max=5) "10c-40c mapping to 0-5v"
     annotation (Placement(transformation(extent={{134,-220},{154,-200}})));
-  Modelica.Blocks.Interfaces.RealOutput TOut "Outdoor air temp" annotation (
-      Placement(transformation(extent={{180,230},{200,250}}),
-        iconTransformation(extent={{180,90},{200,110}})));
-  Modelica.Blocks.Interfaces.RealOutput RHOut "Outdoor air rh" annotation (
-      Placement(transformation(extent={{180,210},{200,230}}),
-        iconTransformation(extent={{180,90},{200,110}})));
+  Modelica.Blocks.Interfaces.RealOutput TOut_V "Outdoor air temp" annotation (
+      Placement(transformation(extent={{180,130},{200,150}}),
+        iconTransformation(extent={{180,140},{200,160}})));
+  Modelica.Blocks.Interfaces.RealOutput RHOut_V "Outdoor air rh" annotation (
+      Placement(transformation(extent={{180,110},{200,130}}),
+        iconTransformation(extent={{180,120},{200,140}})));
   UnitConversion.ToAnolog toV_TOut(
     x_min=-20,
     x_max=120,
@@ -188,6 +188,39 @@ model TwoZoneVAVUnitConverted
     annotation (Placement(transformation(extent={{90,260},{110,280}})));
   Modelica.Blocks.Math.Gain gain(k=100)
     annotation (Placement(transformation(extent={{92,230},{112,250}})));
+  Modelica.Blocks.Interfaces.RealOutput TOut "Outdoor air temp" annotation (
+      Placement(transformation(extent={{192,-112},{212,-92}}),
+        iconTransformation(extent={{180,-20},{200,0}})));
+  Modelica.Blocks.Interfaces.RealOutput RHOut "Outdoor air rh" annotation (
+      Placement(transformation(extent={{192,-132},{212,-112}}),
+        iconTransformation(extent={{180,-40},{200,-20}})));
+  Modelica.Blocks.Interfaces.RealOutput TDis2
+    "Temperature of the passing fluid" annotation (Placement(transformation(
+          extent={{192,-150},{212,-130}}), iconTransformation(extent={{180,100},
+            {200,120}})));
+  Modelica.Blocks.Interfaces.RealOutput V2_flow
+    "Volume flow rate from port_a to port_b" annotation (Placement(
+        transformation(extent={{192,-174},{212,-154}}), iconTransformation(
+          extent={{180,80},{200,100}})));
+  Modelica.Blocks.Interfaces.RealOutput TRooAir2 "Room air temperature"
+    annotation (Placement(transformation(extent={{192,-206},{212,-186}}),
+        iconTransformation(extent={{180,60},{200,80}})));
+  Modelica.Blocks.Interfaces.RealOutput TDis1
+    "Temperature of the passing fluid" annotation (Placement(transformation(
+          extent={{194,-236},{214,-216}}), iconTransformation(extent={{180,-120},
+            {200,-100}})));
+  Modelica.Blocks.Interfaces.RealOutput V1_flow
+    "Volume flow rate from port_a to port_b" annotation (Placement(
+        transformation(extent={{194,-260},{214,-240}}), iconTransformation(
+          extent={{180,-140},{200,-120}})));
+  Modelica.Blocks.Interfaces.RealOutput TRooAir1 "Room air temperature"
+    annotation (Placement(transformation(extent={{194,-292},{214,-272}}),
+        iconTransformation(extent={{180,-160},{200,-140}})));
+  Modelica.Blocks.Sources.RealExpression modTim(y=time) "Modelica time"
+    annotation (Placement(transformation(extent={{130,290},{150,310}})));
+  Modelica.Blocks.Interfaces.RealOutput t "Value of Real output" annotation (
+      Placement(transformation(extent={{180,160},{200,180}}),
+        iconTransformation(extent={{180,160},{200,180}})));
 equation
   connect(weaBus, zon1.weaBus) annotation (Line(
       points={{-50,130},{108,130},{108,-38},{122,-38}},
@@ -253,20 +286,20 @@ equation
                            color={0,127,255}));
   connect(vToCFM_vav2.CFM, toV.x)
     annotation (Line(points={{121,174},{128,174}}, color={0,0,127}));
-  connect(toV.v, V2_flow) annotation (Line(points={{151,174},{170,174},{170,76},
-          {190,76}}, color={0,0,127}));
+  connect(toV.v, V2_flow_V) annotation (Line(points={{151,174},{170,174},{170,
+          -70},{190,-70}}, color={0,0,127}));
   connect(TDisVAV2.T, kToF.K)
     annotation (Line(points={{-6,111},{-6,204},{98,204}}, color={0,0,127}));
   connect(kToF.F, toV1.x)
     annotation (Line(points={{121,204},{128,204}}, color={0,0,127}));
-  connect(toV1.v, TDis2) annotation (Line(points={{151,204},{174,204},{174,100},
-          {190,100}}, color={0,0,127}));
+  connect(toV1.v, TDis2_V) annotation (Line(points={{151,204},{174,204},{174,
+          -50},{190,-50}}, color={0,0,127}));
   connect(zon2.TRooAir, kToF1.K) annotation (Line(points={{157,84},{156,84},{156,
           120},{86,120},{86,144},{98,144}}, color={0,0,127}));
   connect(kToF1.F, toV2.x)
     annotation (Line(points={{121,144},{128,144}}, color={0,0,127}));
-  connect(toV2.v, TRooAir2) annotation (Line(points={{151,144},{166,144},{166,44},
-          {190,44}}, color={0,0,127}));
+  connect(toV2.v, TRooAir2_V) annotation (Line(points={{151,144},{166,144},{166,
+          -90},{190,-90}}, color={0,0,127}));
   connect(kToF2.F, toV3.x)
     annotation (Line(points={{125,-150},{132,-150}}, color={0,0,127}));
   connect(vToCFM_vav1.CFM, toV4.x)
@@ -276,16 +309,16 @@ equation
                                                    color={0,0,127}));
   connect(TDisVAV1.T, kToF2.K) annotation (Line(points={{-6,-29},{-6,-4},{56,-4},
           {56,-150},{102,-150}}, color={0,0,127}));
-  connect(toV3.v, TDis1) annotation (Line(points={{155,-150},{162,-150},{162,
-          -10},{190,-10}}, color={0,0,127}));
+  connect(toV3.v, TDis1_V) annotation (Line(points={{155,-150},{162,-150},{162,
+          50},{190,50}}, color={0,0,127}));
   connect(VSup1.V_flow, vToCFM_vav1.V_flow) annotation (Line(points={{70,-29},{
           70,-8},{52,-8},{52,-180},{102,-180}}, color={0,0,127}));
-  connect(toV4.v, V1_flow) annotation (Line(points={{155,-180},{166,-180},{166,
-          -24},{190,-24}}, color={0,0,127}));
+  connect(toV4.v, V1_flow_V) annotation (Line(points={{155,-180},{166,-180},{
+          166,-24},{190,-24}}, color={0,0,127}));
   connect(zon1.TRooAir, kToF3.K) annotation (Line(points={{157,-56},{158,-56},{
           158,-16},{48,-16},{48,-210},{102,-210}}, color={0,0,127}));
-  connect(toV5.v, TRooAir1) annotation (Line(points={{155,-210},{170,-210},{170,
-          -80},{190,-80}}, color={0,0,127}));
+  connect(toV5.v, TRooAir1_V) annotation (Line(points={{155,-210},{170,-210},{
+          170,10},{190,10}}, color={0,0,127}));
   connect(kToF_TOut.F, toV_TOut.x) annotation (Line(points={{111,270},{120.5,
           270},{120.5,270},{128,270}}, color={0,0,127}));
   connect(weaBus.TDryBul, kToF_TOut.K) annotation (Line(
@@ -296,10 +329,10 @@ equation
       index=-1,
       extent={{-6,3},{-6,3}},
       horizontalAlignment=TextAlignment.Right));
-  connect(toV_TOut.v, TOut) annotation (Line(points={{151,270},{168,270},{168,
-          240},{190,240}}, color={0,0,127}));
-  connect(toV_RHOut.v, RHOut) annotation (Line(points={{151,240},{164,240},{164,
-          220},{190,220}}, color={0,0,127}));
+  connect(toV_TOut.v, TOut_V) annotation (Line(points={{151,270},{168,270},{168,
+          140},{190,140}}, color={0,0,127}));
+  connect(toV_RHOut.v, RHOut_V) annotation (Line(points={{151,240},{164,240},{
+          164,120},{190,120}}, color={0,0,127}));
   connect(gain.y, toV_RHOut.x)
     annotation (Line(points={{113,240},{128,240}}, color={0,0,127}));
   connect(weaBus.relHum, gain.u) annotation (Line(
@@ -310,6 +343,24 @@ equation
       index=-1,
       extent={{-6,3},{-6,3}},
       horizontalAlignment=TextAlignment.Right));
+  connect(kToF_TOut.F, TOut) annotation (Line(points={{111,270},{120,270},{120,
+          290},{26,290},{26,-102},{202,-102}}, color={0,0,127}));
+  connect(gain.y, RHOut) annotation (Line(points={{113,240},{118,240},{118,254},
+          {26,254},{26,-122},{202,-122}}, color={0,0,127}));
+  connect(kToF.F, TDis2) annotation (Line(points={{121,204},{124,204},{124,226},
+          {14,226},{14,-140},{202,-140}}, color={0,0,127}));
+  connect(vToCFM_vav2.CFM, V2_flow) annotation (Line(points={{121,174},{124,174},
+          {124,190},{26,190},{26,-164},{202,-164}}, color={0,0,127}));
+  connect(kToF1.F, TRooAir2) annotation (Line(points={{121,144},{124,144},{124,
+          158},{26,158},{26,-196},{202,-196}}, color={0,0,127}));
+  connect(kToF2.F, TDis1) annotation (Line(points={{125,-150},{128,-150},{128,
+          -132},{26,-132},{26,-226},{204,-226}}, color={0,0,127}));
+  connect(vToCFM_vav1.CFM, V1_flow) annotation (Line(points={{125,-180},{128,
+          -180},{128,-166},{26,-166},{26,-250},{204,-250}}, color={0,0,127}));
+  connect(kToF3.F, TRooAir1) annotation (Line(points={{125,-210},{128,-210},{
+          128,-198},{28,-198},{28,-282},{204,-282}}, color={0,0,127}));
+  connect(modTim.y, t) annotation (Line(points={{151,300},{162,300},{162,170},{
+          190,170}}, color={0,0,127}));
   annotation (Diagram(
         coordinateSystem(preserveAspectRatio=false, extent={{-100,-140},{180,140}})), Icon(
         graphics={Rectangle(
@@ -322,11 +373,7 @@ equation
           lineColor={0,0,255},
           textString="%name")}),
     experiment(
-      StopTime=60,
-      __Dymola_fixedstepsize=0.001,
-      __Dymola_Algorithm="Euler"),
-    __Dymola_experimentFlags(Advanced(
-        InlineMethod=4,
-        InlineOrder=2,
-        InlineFixedStep=0.001)));
+      StopTime=86400,
+      __Dymola_fixedstepsize=8640,
+      __Dymola_Algorithm="Cvode"));
 end TwoZoneVAVUnitConverted;
