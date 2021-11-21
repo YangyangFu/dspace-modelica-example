@@ -31,6 +31,7 @@
 			<ItemInfoAddInfoDb type="key"/>
 			<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
 			<item>
+				<Component type="key">Instrumentation</Component>
 				<Targets type="key">instrumentation</Targets>
 				<Name type="key">Experiment Layouts</Name>
 				<DisplayName type="key">Experiment Layouts</DisplayName>
@@ -92,10 +93,10 @@
 				<item>
 					<Component type="key">PlatformManagement</Component>
 					<Targets type="key">Device::59e39b01-f002-4f43-ac0c-7a07055c9385</Targets>
-					<RestoreInfopmdn type="key">Platform</RestoreInfopmdn>
+					<RestoreInfopmdn type="key">SCALEXIO</RestoreInfopmdn>
 					<RestoreInfopmid type="key">59e39b01-f002-4f43-ac0c-7a07055c9385</RestoreInfopmid>
 					<Name type="key">59e39b01-f002-4f43-ac0c-7a07055c9385</Name>
-					<DisplayName type="key">Platform [SCALEXIO Platform, assigned to 'SCALEXIO']</DisplayName>
+					<DisplayName type="key">SCALEXIO [SCALEXIO Platform, assigned to 'SCALEXIO']</DisplayName>
 					<Flags type="key">128</Flags>
 					<ExtendedFlags type="key">3072</ExtendedFlags>
 					<Type type="key">6</Type>
@@ -103,6 +104,8 @@
 					<EntityID type="key">{66DED39F-DBE0-4657-8425-9CA336443786}</EntityID>
 					<ItemInfoDate type="key">11/8/2021 5:25:28 PM</ItemInfoDate>
 					<ItemInfoDescr type="key"/>
+					<ItemInfoLog type="key">
+Property Rename platform changed on 11/21/2021 13:28:06</ItemInfoLog>
 					<ItemInfoAddInfoDb type="key"/>
 					<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
 					<item>
@@ -194,6 +197,22 @@
 				<ItemInfoDescr type="key"/>
 				<ItemInfoAddInfoDb type="key"/>
 				<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
+				<item>
+					<Component type="key">Interpreter</Component>
+					<RestoreInfoMD5FileHash type="key">00c054b671f6b9978e69d27786c7d2b7</RestoreInfoMD5FileHash>
+					<Name type="key">test.py</Name>
+					<DisplayName type="key">test.py</DisplayName>
+					<Path type="key">.\Python Scripts</Path>
+					<Flags type="key">16448</Flags>
+					<Type type="key">42</Type>
+					<UniqueID type="key">923408267</UniqueID>
+					<EntityID type="key">{43BE8B12-6209-4AEF-AB5A-3594D24F3C19}</EntityID>
+					<ItemInfoDate type="key">11/21/2021 2:13:00 PM</ItemInfoDate>
+					<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+					<ItemInfoDescr type="key"/>
+					<ItemInfoAddInfoDb type="key"/>
+					<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
+				</item>
 			</item>
 			<item>
 				<Targets type="key">signaleditor</Targets>
@@ -326,7 +345,7 @@
 		<DeviceFactory>
 			<Device>
 				<DeviceName type="key">59e39b01-f002-4f43-ac0c-7a07055c9385</DeviceName>
-				<DisplayName type="key">Platform</DisplayName>
+				<DisplayName type="key">SCALEXIO</DisplayName>
 				<DeviceType type="key">240</DeviceType>
 				<DeviceConfiguration/>
 				<applications/>
