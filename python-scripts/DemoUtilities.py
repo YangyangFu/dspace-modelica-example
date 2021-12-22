@@ -28,7 +28,7 @@ from enum import Enum
 
 __all__ = ["DemoError", "ThreadAffinity", "DemoDialogIcons", "DemoDialog",
            "IsMainThread", "RGB", "PrepareEnvironment", "RestoreEnvironment",
-           "ENUM", "BITMASK", "Wait", "CloseAllCalDemoWindows"]
+           "ENUM", "BITMASK", "Wait", "CloseAllWindows"]
 
 _DefaultQuiet = False
 _DefaultConsole = False
@@ -79,9 +79,9 @@ def RGB(Red=0, Green=0, Blue=0):
 # Function CloseAllCalDemoWindows
 #     This function closes all windows of the CalDemo process.
 #--------------------------------------------------------------------------------------------------
-def CloseAllCalDemoWindows():
+def CloseAllWindows():
     """
-    Syntax       : CloseAllCalDemoWindows()
+    Syntax       : CloseAllWindows()
 
     Description  : This function closes all windows of the CalDemo process. Actually it closes all 
                    windows that contain the string "dSPACE CalDemo".

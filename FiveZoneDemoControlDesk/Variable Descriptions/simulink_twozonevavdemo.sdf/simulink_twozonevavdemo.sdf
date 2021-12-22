@@ -8,7 +8,7 @@ File=simulink_twozonevavdemo.rta
 RTP=1
 
 [1]
-ID=7d914b7e-3e28-45e6-badb-f4240a5716a0
+ID=4873ac28-71b7-461b-80bd-6cd8583ceded
 Type=DSRTPC
 ServiceID=1
 TraceFile=twozonevavdemo.trc

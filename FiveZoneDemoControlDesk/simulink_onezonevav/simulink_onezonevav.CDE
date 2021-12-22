@@ -47,20 +47,6 @@
 				<ItemInfoAddInfoDb type="key"/>
 				<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
 				<item>
-					<Name type="key">simulink_onezonevav.cdc</Name>
-					<DisplayName type="key">simulink_onezonevav.cdc</DisplayName>
-					<Path type="key">.\Experiment Layouts</Path>
-					<Flags type="key">4100</Flags>
-					<Type type="key">4</Type>
-					<UniqueID type="key">608998235</UniqueID>
-					<EntityID type="key">{4BD37470-B82E-41C2-9D01-CF2C5A1B874E}</EntityID>
-					<ItemInfoDate type="key">11/8/2021 5:25:28 PM</ItemInfoDate>
-					<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
-					<ItemInfoDescr type="key"/>
-					<ItemInfoAddInfoDb type="key"/>
-					<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
-				</item>
-				<item>
 					<Component type="key">Instrumentation</Component>
 					<Name type="key">Layout1.lay</Name>
 					<DisplayName type="key">Layout1.lay</DisplayName>
@@ -70,6 +56,36 @@
 					<UniqueID type="key">308996662</UniqueID>
 					<EntityID type="key">{955F12BB-3B42-4E6C-B3BB-5DD24C3B2678}</EntityID>
 					<ItemInfoDate type="key">11/8/2021 5:25:28 PM</ItemInfoDate>
+					<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+					<ItemInfoDescr type="key"/>
+					<ItemInfoAddInfoDb type="key"/>
+					<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
+				</item>
+				<item>
+					<Component type="key">Instrumentation</Component>
+					<Name type="key">Layout2.lay</Name>
+					<DisplayName type="key">Layout2.lay</DisplayName>
+					<Path type="key">.\Experiment Layouts</Path>
+					<Flags type="key">16448</Flags>
+					<Type type="key">10</Type>
+					<UniqueID type="key">9500190</UniqueID>
+					<EntityID type="key">{9EEC001D-FD7C-4010-B548-AF9D24686623}</EntityID>
+					<ItemInfoDate type="key">11/22/2021 12:00:59 PM</ItemInfoDate>
+					<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+					<ItemInfoDescr type="key"/>
+					<ItemInfoAddInfoDb type="key"/>
+					<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
+				</item>
+				<item>
+					<Component type="key">Instrumentation</Component>
+					<Name type="key">Demo Layout.lay</Name>
+					<DisplayName type="key">Demo Layout.lay</DisplayName>
+					<Path type="key">.\Experiment Layouts</Path>
+					<Flags type="key">16448</Flags>
+					<Type type="key">10</Type>
+					<UniqueID type="key">599714170</UniqueID>
+					<EntityID type="key">{8C9D5C09-7C09-4313-908E-391FCF1A08AC}</EntityID>
+					<ItemInfoDate type="key">11/23/2021 3:27:27 PM</ItemInfoDate>
 					<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
 					<ItemInfoDescr type="key"/>
 					<ItemInfoAddInfoDb type="key"/>
@@ -130,6 +146,12 @@ Property Rename platform changed on 11/21/2021 13:28:06</ItemInfoLog>
 							<ItemInfoAddInfoDb type="key"/>
 							<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
 						</item>
+						<item>
+							<Component type="key">MeasureDataManagement</Component>
+							<Flags type="key">1380</Flags>
+							<UniqueID type="key">12422354</UniqueID>
+							<LinkedItem type="key">878485752</LinkedItem>
+						</item>
 					</item>
 				</item>
 			</item>
@@ -163,6 +185,26 @@ Property Rename platform changed on 11/21/2021 13:28:06</ItemInfoLog>
 				<ItemInfoDescr type="key"/>
 				<ItemInfoAddInfoDb type="key"/>
 				<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
+				<item>
+					<Component type="key">MeasureDataManagement</Component>
+					<Name type="key">Recorder1010.mf4</Name>
+					<DisplayName type="key">Recorder1010.mf4</DisplayName>
+					<Path type="key">.\Measurement Data</Path>
+					<Flags type="key">1088</Flags>
+					<Type type="key">9</Type>
+					<UniqueID type="key">878485752</UniqueID>
+					<EntityID type="key">{32E0A138-28D1-4AD3-BDE3-08C20D262E10}</EntityID>
+					<ItemInfoDate type="key">11/24/2021 2:57:35 PM</ItemInfoDate>
+					<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+					<ItemInfoDescr type="key"/>
+					<ItemInfoLog type="key">
+Software revision: simulink_onezonevav.sdf, simulink_onezonevav.rta
+Variable description: simulink_onezonevav.sdf
+    Platform / Device: SCALEXIO [SCALEXIO Platform, assigned to 'SCALEXIO']
+ControlDesk version: 7.2</ItemInfoLog>
+					<ItemInfoAddInfoDb type="key"/>
+					<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
+				</item>
 			</item>
 			<item>
 				<Targets type="key">.rtf,.pdf,.html,.xml,.txt,.csv</Targets>
@@ -197,22 +239,6 @@ Property Rename platform changed on 11/21/2021 13:28:06</ItemInfoLog>
 				<ItemInfoDescr type="key"/>
 				<ItemInfoAddInfoDb type="key"/>
 				<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
-				<item>
-					<Component type="key">Interpreter</Component>
-					<RestoreInfoMD5FileHash type="key">00c054b671f6b9978e69d27786c7d2b7</RestoreInfoMD5FileHash>
-					<Name type="key">test.py</Name>
-					<DisplayName type="key">test.py</DisplayName>
-					<Path type="key">.\Python Scripts</Path>
-					<Flags type="key">16448</Flags>
-					<Type type="key">42</Type>
-					<UniqueID type="key">923408267</UniqueID>
-					<EntityID type="key">{43BE8B12-6209-4AEF-AB5A-3594D24F3C19}</EntityID>
-					<ItemInfoDate type="key">11/21/2021 2:13:00 PM</ItemInfoDate>
-					<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
-					<ItemInfoDescr type="key"/>
-					<ItemInfoAddInfoDb type="key"/>
-					<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
-				</item>
 			</item>
 			<item>
 				<Targets type="key">signaleditor</Targets>
@@ -444,7 +470,7 @@ Property Rename platform changed on 11/21/2021 13:28:06</ItemInfoLog>
 		</DeviceFactory>
 	</PlatformManagement>
 	<MeasurementConfiguration>
-		<NextUniqueKey type="key">10</NextUniqueKey>
+		<NextUniqueKey type="key">11</NextUniqueKey>
 		<SortedColumn type="key">4</SortedColumn>
 		<SortAscending type="key">-1</SortAscending>
 		<SignalList>
@@ -523,9 +549,9 @@ Property Rename platform changed on 11/21/2021 13:28:06</ItemInfoLog>
 		</DurationTriggers>
 		<SampleCountTriggers/>
 		<Acquisition>
-			<MeasurementBufferSize type="key">60</MeasurementBufferSize>
-			<BufferOverflowWarningEnabled type="key">0</BufferOverflowWarningEnabled>
-			<BufferOverflowWarningTime type="key">10</BufferOverflowWarningTime>
+			<MeasurementBufferSize type="key">10</MeasurementBufferSize>
+			<BufferOverflowWarningEnabled type="key">-1</BufferOverflowWarningEnabled>
+			<BufferOverflowWarningTime type="key">3</BufferOverflowWarningTime>
 			<SaveMeasurementBuffer>
 				<AddToExperimentEnabled type="key">-1</AddToExperimentEnabled>
 				<AutomaticSaveDialogEnabled type="key">0</AutomaticSaveDialogEnabled>
@@ -574,7 +600,58 @@ Property Rename platform changed on 11/21/2021 13:28:06</ItemInfoLog>
 				<RecordingFileType type="key">ASAM MDF 4.1 Files (*.mf4)</RecordingFileType>
 			</SaveFlightRecorderData>
 		</Acquisition>
-		<Recorders/>
+		<Recorders>
+			<Recorder>
+				<Name type="key">Recorder1</Name>
+				<UniqueKey type="key">10</UniqueKey>
+				<AutomaticSignalConfigurationEnabled type="key">0</AutomaticSignalConfigurationEnabled>
+				<WriteToFileEnabled type="key">-1</WriteToFileEnabled>
+				<MeasurementTimestampsEnabled type="key">0</MeasurementTimestampsEnabled>
+				<StartAudioSignalEnabled type="key">0</StartAudioSignalEnabled>
+				<StopAudioSignalEnabled type="key">0</StopAudioSignalEnabled>
+				<Active type="key">-1</Active>
+				<StartCondition>
+					<Enabled type="key">0</Enabled>
+					<RecordingCycleCount type="key">1</RecordingCycleCount>
+					<SelectedTriggerRule type="key"/>
+					<TriggerDelay type="key">0</TriggerDelay>
+				</StartCondition>
+				<StopCondition>
+					<RecordingStopWarningEnabled type="key">0</RecordingStopWarningEnabled>
+					<RecordingStopWarningTime type="key">60</RecordingStopWarningTime>
+					<SelectedTriggerRule type="key"/>
+					<Type type="key">0</Type>
+					<TimeLimit type="key">3600</TimeLimit>
+					<TriggerDelay type="key">0</TriggerDelay>
+				</StopCondition>
+				<StorageInformation>
+					<AddToExperimentEnabled type="key">-1</AddToExperimentEnabled>
+					<AutomaticSaveDialogEnabled type="key">0</AutomaticSaveDialogEnabled>
+					<AutomaticExportEnabled type="key">0</AutomaticExportEnabled>
+					<AutomaticExportFileNamePrefix type="key">Recorder1_exp_</AutomaticExportFileNamePrefix>
+					<AutomaticExportFileType type="key">ASAM MDF 4.1 Files (*.mf4)</AutomaticExportFileType>
+					<AutomaticExportFolder type="key"/>
+					<AutomaticNamingEnabled type="key">-1</AutomaticNamingEnabled>
+					<AutomaticNamingMinimunDigits type="key">3</AutomaticNamingMinimunDigits>
+					<AutomaticNamingStartIndex type="key">11</AutomaticNamingStartIndex>
+					<Description type="key"/>
+					<FileNamePrefix type="key">Recorder1</FileNamePrefix>
+					<OpenInMeasurementDataPoolEnabled type="key">-1</OpenInMeasurementDataPoolEnabled>
+					<RecordingFileType type="key">ASAM MDF 4.1 Files (*.mf4)</RecordingFileType>
+				</StorageInformation>
+				<SignalList>
+					<Variable>
+						<Name type="key">Model Root/behavior/TRooAir</Name>
+						<Platform type="key">59e39b01-f002-4f43-ac0c-7a07055c9385</Platform>
+						<PlatformDisplayName type="key">SCALEXIO</PlatformDisplayName>
+						<Recorded type="key">-1</Recorded>
+						<Signal>
+							<Raster type="key">Periodic Task 1</Raster>
+						</Signal>
+					</Variable>
+				</SignalList>
+			</Recorder>
+		</Recorders>
 	</MeasurementConfiguration>
 	<MeasureDataManagement>
 		<TriggerRules>

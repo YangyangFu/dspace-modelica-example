@@ -1,0 +1,15 @@
+[System]
+Version=2.2
+SystemType=SingleProcessorSystem
+DAQService=DsDAQ
+DsDAQBackground=1
+Status=Start
+File=simulink_weather.rta
+RTP=1
+
+[1]
+ID=096d3fc3-3342-40f7-acdf-df956d012bb5
+Type=DSRTPC
+ServiceID=1
+TraceFile=weather.trc
+

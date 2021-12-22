@@ -105,6 +105,21 @@
 					<ItemInfoAddInfoDb type="key"/>
 					<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
 				</item>
+				<item>
+					<Component type="key">Instrumentation</Component>
+					<Name type="key">yvav.lay</Name>
+					<DisplayName type="key">yvav.lay</DisplayName>
+					<Path type="key">.\Experiment Layouts</Path>
+					<Flags type="key">16448</Flags>
+					<Type type="key">10</Type>
+					<UniqueID type="key">822347653</UniqueID>
+					<EntityID type="key">{B460DF04-B5F3-49BD-998D-E9C015340F09}</EntityID>
+					<ItemInfoDate type="key">11/24/2021 4:11:29 PM</ItemInfoDate>
+					<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
+					<ItemInfoDescr type="key"/>
+					<ItemInfoAddInfoDb type="key"/>
+					<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
+				</item>
 			</item>
 			<item>
 				<Targets type="key">devicemanagement,platformmanagement,diagnosticsmanagement</Targets>
@@ -143,12 +158,6 @@
 						<ExtendedFlags type="key">1</ExtendedFlags>
 						<UniqueID type="key">820544103</UniqueID>
 						<LinkedItem type="key">182112860</LinkedItem>
-						<item>
-							<Component type="key">MeasureDataManagement</Component>
-							<Flags type="key">1380</Flags>
-							<UniqueID type="key">120049717</UniqueID>
-							<LinkedItem type="key">399646197</LinkedItem>
-						</item>
 						<item>
 							<Component type="key">DataSetManager</Component>
 							<Name type="key">Data Sets</Name>
@@ -197,26 +206,6 @@
 				<ItemInfoDescr type="key"/>
 				<ItemInfoAddInfoDb type="key"/>
 				<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
-				<item>
-					<Component type="key">MeasureDataManagement</Component>
-					<Name type="key">buf_001.mf4</Name>
-					<DisplayName type="key">buf_001.mf4</DisplayName>
-					<Path type="key">.\Measurement Data</Path>
-					<Flags type="key">1088</Flags>
-					<Type type="key">9</Type>
-					<UniqueID type="key">399646197</UniqueID>
-					<EntityID type="key">{28BEFB69-0696-4E89-898D-52EF41E82C19}</EntityID>
-					<ItemInfoDate type="key">11/16/2021 3:20:02 PM</ItemInfoDate>
-					<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
-					<ItemInfoDescr type="key"/>
-					<ItemInfoLog type="key">
-Software revision: simulink_twozonevavdemo.sdf, simulink_twozonevavdemo.rta
-Variable description: simulink_twozonevavdemo.sdf
-    Platform / Device: Platform [SCALEXIO Platform, assigned to 'SCALEXIO']
-ControlDesk version: 7.2</ItemInfoLog>
-					<ItemInfoAddInfoDb type="key"/>
-					<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
-				</item>
 			</item>
 			<item>
 				<Targets type="key">.rtf,.pdf,.html,.xml,.txt,.csv</Targets>
@@ -482,12 +471,12 @@ ControlDesk version: 7.2</ItemInfoLog>
 		</DeviceFactory>
 	</PlatformManagement>
 	<MeasurementConfiguration>
-		<NextUniqueKey type="key">16</NextUniqueKey>
+		<NextUniqueKey type="key">18</NextUniqueKey>
 		<SortedColumn type="key">4</SortedColumn>
 		<SortAscending type="key">-1</SortAscending>
 		<SignalList>
 			<Variable>
-				<Name type="key">Model Root/Subsystem/RHOut</Name>
+				<Name type="key">Model Root/DymolaBlock/RHOut</Name>
 				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
@@ -495,7 +484,7 @@ ControlDesk version: 7.2</ItemInfoLog>
 				</Signal>
 			</Variable>
 			<Variable>
-				<Name type="key">Model Root/Subsystem/RHOut_V</Name>
+				<Name type="key">Model Root/DymolaBlock/RHOut_V</Name>
 				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
@@ -503,7 +492,7 @@ ControlDesk version: 7.2</ItemInfoLog>
 				</Signal>
 			</Variable>
 			<Variable>
-				<Name type="key">Model Root/Subsystem/t</Name>
+				<Name type="key">Model Root/DymolaBlock/t</Name>
 				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
@@ -511,7 +500,7 @@ ControlDesk version: 7.2</ItemInfoLog>
 				</Signal>
 			</Variable>
 			<Variable>
-				<Name type="key">Model Root/Subsystem/TDis1</Name>
+				<Name type="key">Model Root/DymolaBlock/TDis1_V</Name>
 				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
@@ -519,7 +508,7 @@ ControlDesk version: 7.2</ItemInfoLog>
 				</Signal>
 			</Variable>
 			<Variable>
-				<Name type="key">Model Root/Subsystem/TDis1_V</Name>
+				<Name type="key">Model Root/DymolaBlock/TDis2_V</Name>
 				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
@@ -527,7 +516,7 @@ ControlDesk version: 7.2</ItemInfoLog>
 				</Signal>
 			</Variable>
 			<Variable>
-				<Name type="key">Model Root/Subsystem/TDis2</Name>
+				<Name type="key">Model Root/DymolaBlock/TOut</Name>
 				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
@@ -535,7 +524,7 @@ ControlDesk version: 7.2</ItemInfoLog>
 				</Signal>
 			</Variable>
 			<Variable>
-				<Name type="key">Model Root/Subsystem/TDis2_V</Name>
+				<Name type="key">Model Root/DymolaBlock/TOut_V</Name>
 				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
@@ -543,7 +532,7 @@ ControlDesk version: 7.2</ItemInfoLog>
 				</Signal>
 			</Variable>
 			<Variable>
-				<Name type="key">Model Root/Subsystem/TOut</Name>
+				<Name type="key">Model Root/DymolaBlock/TRooAir1</Name>
 				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
@@ -551,7 +540,7 @@ ControlDesk version: 7.2</ItemInfoLog>
 				</Signal>
 			</Variable>
 			<Variable>
-				<Name type="key">Model Root/Subsystem/TOut_V</Name>
+				<Name type="key">Model Root/DymolaBlock/TRooAir1_V</Name>
 				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
@@ -559,7 +548,7 @@ ControlDesk version: 7.2</ItemInfoLog>
 				</Signal>
 			</Variable>
 			<Variable>
-				<Name type="key">Model Root/Subsystem/TRooAir1</Name>
+				<Name type="key">Model Root/DymolaBlock/TRooAir2</Name>
 				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
@@ -567,7 +556,7 @@ ControlDesk version: 7.2</ItemInfoLog>
 				</Signal>
 			</Variable>
 			<Variable>
-				<Name type="key">Model Root/Subsystem/TRooAir1_V</Name>
+				<Name type="key">Model Root/DymolaBlock/TRooAir2_V</Name>
 				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
@@ -575,7 +564,7 @@ ControlDesk version: 7.2</ItemInfoLog>
 				</Signal>
 			</Variable>
 			<Variable>
-				<Name type="key">Model Root/Subsystem/TRooAir2</Name>
+				<Name type="key">Model Root/DymolaBlock/V1_flow</Name>
 				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
@@ -583,7 +572,7 @@ ControlDesk version: 7.2</ItemInfoLog>
 				</Signal>
 			</Variable>
 			<Variable>
-				<Name type="key">Model Root/Subsystem/TRooAir2_V</Name>
+				<Name type="key">Model Root/DymolaBlock/V1_flow_V</Name>
 				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
@@ -591,7 +580,7 @@ ControlDesk version: 7.2</ItemInfoLog>
 				</Signal>
 			</Variable>
 			<Variable>
-				<Name type="key">Model Root/Subsystem/V1_flow</Name>
+				<Name type="key">Model Root/DymolaBlock/V2_flow</Name>
 				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
@@ -599,7 +588,7 @@ ControlDesk version: 7.2</ItemInfoLog>
 				</Signal>
 			</Variable>
 			<Variable>
-				<Name type="key">Model Root/Subsystem/V1_flow_V</Name>
+				<Name type="key">Model Root/DymolaBlock/V2_flow_V</Name>
 				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
@@ -607,7 +596,7 @@ ControlDesk version: 7.2</ItemInfoLog>
 				</Signal>
 			</Variable>
 			<Variable>
-				<Name type="key">Model Root/Subsystem/V2_flow</Name>
+				<Name type="key">Model Root/DymolaBlock/weaBus_relHum</Name>
 				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
@@ -615,7 +604,7 @@ ControlDesk version: 7.2</ItemInfoLog>
 				</Signal>
 			</Variable>
 			<Variable>
-				<Name type="key">Model Root/Subsystem/V2_flow_V</Name>
+				<Name type="key">Model Root/DymolaBlock/weaBus_TDryBul</Name>
 				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
@@ -623,7 +612,7 @@ ControlDesk version: 7.2</ItemInfoLog>
 				</Signal>
 			</Variable>
 			<Variable>
-				<Name type="key">Model Root/Subsystem/weaBus_relHum</Name>
+				<Name type="key">Model Root/yVAV1/Voltage</Name>
 				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
@@ -631,7 +620,7 @@ ControlDesk version: 7.2</ItemInfoLog>
 				</Signal>
 			</Variable>
 			<Variable>
-				<Name type="key">Model Root/Subsystem/weaBus_TDryBul</Name>
+				<Name type="key">Model Root/yVAV2/Voltage</Name>
 				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
@@ -670,7 +659,41 @@ ControlDesk version: 7.2</ItemInfoLog>
 							<Platform type="key"/>
 						</VariableMappings>
 					</PlatformTrigger>
+					<PlatformTrigger>
+						<UniqueKey type="key">16</UniqueKey>
+						<Name type="key">Platform Trigger 2</Name>
+						<Condition type="key"/>
+						<Delay type="key">0</Delay>
+						<Enabled type="key">0</Enabled>
+						<Timeout type="key">0</Timeout>
+						<TimeoutEnabled type="key">0</TimeoutEnabled>
+						<VariableMappings>
+							<Platform type="key"/>
+						</VariableMappings>
+					</PlatformTrigger>
 				</PlatformTriggers>
+				<DataLoggers>
+					<DataLogger>
+						<Name type="key">2d2a64b3-0471-4151-bf16-5fe2784a80ff</Name>
+						<FilteredRastersView type="key">1</FilteredRastersView>
+						<UseDefaultRasterForParameters type="key">1</UseDefaultRasterForParameters>
+						<DefaultRaster type="key">Periodic Task 1</DefaultRaster>
+						<DisplayName type="key">DataLogger 1</DisplayName>
+						<UniqueIdentifier type="key">665027ff-c121-488d-ac31-15616d0cd5ea</UniqueIdentifier>
+						<Rasters>
+							<PlatformTriggered>
+								<Name type="key">Periodic Task 1</Name>
+								<AutoRepeatEnabled type="key">1</AutoRepeatEnabled>
+								<AutoRepeatBehavior type="key">1</AutoRepeatBehavior>
+								<MultiCaptureHistoryEnabled type="key">0</MultiCaptureHistoryEnabled>
+								<DownsamplingFactor type="key">1</DownsamplingFactor>
+								<StartTrigger type="key">16</StartTrigger>
+								<StopTrigger type="key">17</StopTrigger>
+							</PlatformTriggered>
+						</Rasters>
+						<EnabledHardwarePollingRasters/>
+					</DataLogger>
+				</DataLoggers>
 			</Platform>
 			<Platform>
 				<Name type="key">Calculated</Name>
@@ -687,6 +710,13 @@ ControlDesk version: 7.2</ItemInfoLog>
 			</Platform>
 		</Platforms>
 		<DurationTriggers>
+			<DurationTrigger>
+				<UniqueKey type="key">17</UniqueKey>
+				<Name type="key">Duration Trigger 2</Name>
+				<Delay type="key">0</Delay>
+				<Duration type="key">1</Duration>
+				<Enabled type="key">0</Enabled>
+			</DurationTrigger>
 			<DurationTrigger>
 				<UniqueKey type="key">15</UniqueKey>
 				<Name type="key">Duration Trigger 1</Name>

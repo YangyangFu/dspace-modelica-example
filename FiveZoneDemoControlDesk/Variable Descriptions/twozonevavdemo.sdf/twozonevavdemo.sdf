@@ -1,0 +1,15 @@
+[System]
+Version=2.2
+SystemType=SingleProcessorSystem
+DAQService=DsDAQ
+DsDAQBackground=1
+Status=Start
+File=twozonevavdemo.rta
+RTP=1
+
+[1]
+ID=a8dabf33-5cc2-43b3-a319-bbdf250dd87a
+Type=DSRTPC
+ServiceID=1
+TraceFile=twozonevavdemo.trc
+
