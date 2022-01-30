@@ -19,11 +19,11 @@ model TwoZoneVAVUnitConverted
         transformation(
         extent={{-10,-10},{10,10}},
         rotation=0,
-        origin={-90,-20})));
+        origin={-90,-224})));
   Buildings.Fluid.FixedResistances.PressureDrop res(
     redeclare package Medium = MediumA,
     m_flow_nominal=m_flow_nominal,
-    dp_nominal=220 + 20)
+    dp_nominal=10 + 220 + 20)
     annotation (Placement(transformation(extent={{-18,-130},{2,-110}})));
   WeatherTable.Chicago weaDat "Chicago"
     annotation (Placement(transformation(extent={{-100,98},{-80,120}})));
@@ -35,8 +35,6 @@ model TwoZoneVAVUnitConverted
         extent={{10,-10},{-10,10}},
         rotation=0,
         origin={170,-120})));
-  Modelica.Blocks.Sources.Constant zer(k=0)
-    annotation (Placement(transformation(extent={{-100,10},{-80,30}})));
   Modelica.Blocks.Interfaces.RealInput yVAV2 "Voltage signal for VAV damper"
     annotation (Placement(transformation(extent={{-140,40},{-100,80}})));
   Modelica.Blocks.Interfaces.RealOutput TDis2_V
@@ -56,8 +54,8 @@ model TwoZoneVAVUnitConverted
     m_flow_nominal=m_flow_nominal,
     VRoo=VRoo) "Zone for core of buildings (azimuth will be neglected)"
     annotation (Placement(transformation(extent={{-40,40},{0,80}})));
-  Buildings.Fluid.Sensors.TemperatureTwoPort TDisVAV2(redeclare package Medium =
-        MediumA, m_flow_nominal=m_flow_nominal)
+  Buildings.Fluid.Sensors.TemperatureTwoPort TDisVAV2(redeclare package Medium
+      = MediumA, m_flow_nominal=m_flow_nominal)
     annotation (Placement(transformation(extent={{-16,90},{4,110}})));
   Buildings.Fluid.Sensors.VolumeFlowRate VSup2(
     redeclare package Medium = MediumA,
@@ -151,8 +149,8 @@ model TwoZoneVAVUnitConverted
     m_flow_nominal=m_flow_nominal,
     VRoo=VRoo) "Zone for core of buildings (azimuth will be neglected)"
     annotation (Placement(transformation(extent={{-40,-80},{0,-40}})));
-  Buildings.Fluid.Sensors.TemperatureTwoPort TDisVAV1(redeclare package Medium =
-        MediumA, m_flow_nominal=m_flow_nominal)
+  Buildings.Fluid.Sensors.TemperatureTwoPort TDisVAV1(redeclare package Medium
+      = MediumA, m_flow_nominal=m_flow_nominal)
     annotation (Placement(transformation(extent={{-16,-30},{4,-10}})));
   Buildings.Fluid.Sensors.VolumeFlowRate VSup1(
     redeclare package Medium = MediumA,
@@ -220,13 +218,50 @@ model TwoZoneVAVUnitConverted
     "Temperature of the passing fluid" annotation (Placement(transformation(
           extent={{194,-246},{214,-226}}), iconTransformation(extent={{180,-120},
             {200,-100}})));
+  Modelica.Blocks.Interfaces.RealInput yHea2 "Voltage signal for heating coil"
+    annotation (Placement(transformation(extent={{-140,10},{-100,50}})));
+  UnitConversion.FromAnalog volToUni_yhea2(
+    v_min=0,
+    v_max=10,
+    y_min=0,
+    y_max=1) annotation (Placement(transformation(extent={{-92,20},{-72,40}})));
+  UnitConversion.FromAnalog volToUni_yhea1(
+    v_min=0,
+    v_max=10,
+    y_min=0,
+    y_max=1)
+    annotation (Placement(transformation(extent={{-92,-100},{-72,-80}})));
+  Modelica.Blocks.Interfaces.RealInput yHea1 "Voltage signal for heating coil"
+    annotation (Placement(transformation(extent={{-140,-110},{-100,-70}})));
+  Buildings.Fluid.Actuators.Valves.TwoWayLinear val2(
+    redeclare package Medium = MediumA,
+    m_flow_nominal=m_flow_nominal,
+    dpValve_nominal=10) "Valve 2" annotation (Placement(transformation(
+        extent={{-10,-10},{10,10}},
+        rotation=90,
+        origin={-30,16})));
+  Buildings.Fluid.Actuators.Valves.TwoWayLinear val1(
+    redeclare package Medium = MediumA,
+    m_flow_nominal=m_flow_nominal,
+    dpValve_nominal=10) "Valve 2" annotation (Placement(transformation(
+        extent={{-10,-10},{10,10}},
+        rotation=90,
+        origin={-40,-110})));
+  Modelica.Blocks.Math.RealToBoolean reaToBoo2(threshold=0.05)
+    annotation (Placement(transformation(extent={{-94,-10},{-74,10}})));
+  Modelica.Blocks.Math.BooleanToReal booToRea2
+    annotation (Placement(transformation(extent={{-66,-10},{-46,10}})));
+  Modelica.Blocks.Math.RealToBoolean reaToBoo1(threshold=0.05)
+    annotation (Placement(transformation(extent={{-100,-160},{-80,-140}})));
+  Modelica.Blocks.Math.BooleanToReal booToRea1
+    annotation (Placement(transformation(extent={{-72,-160},{-52,-140}})));
 equation
   connect(weaDat.weaBus, weaBus) annotation (Line(
       points={{-82.2,109.22},{-68.1,109.22},{-68.1,130},{-50,130}},
       color={255,204,51},
       thickness=0.5));
-  connect(coiSou.ports[1], res.port_a) annotation (Line(points={{-80,-17.3333},
-          {-62,-17.3333},{-62,-120},{-18,-120}},
+  connect(coiSou.ports[1], res.port_a) annotation (Line(points={{-80,-221.333},
+          {-28,-221.333},{-28,-120},{-18,-120}},
                                        color={0,127,255}));
   connect(res.port_b, sin.ports[1]) annotation (Line(points={{2,-120},{82,-120},
           {82,-117.333},{160,-117.333}},
@@ -238,8 +273,6 @@ equation
     annotation (Line(points={{4,100},{60,100}}, color={0,127,255}));
   connect(VSup2.port_b, zon2.supplyAir) annotation (Line(points={{80,100},{100,
           100},{100,86},{116,86}}, color={0,127,255}));
-  connect(zer.y, vav2.yVal) annotation (Line(points={{-79,20},{-60,20},{-60,52},
-          {-44,52}}, color={0,0,127}));
   connect(weaBus, zon2.weaBus) annotation (Line(
       points={{-50,130},{122,130},{122,102}},
       color={255,204,51},
@@ -250,14 +283,11 @@ equation
       horizontalAlignment=TextAlignment.Right));
   connect(yVAV2, volToUni_yvav2.v)
     annotation (Line(points={{-120,60},{-90,60}}, color={0,0,127}));
-  connect(volToUni_yvav2.y, vav2.yVAV) annotation (Line(points={{-67,60},{-60,
-          60},{-60,68},{-44,68}},
+  connect(volToUni_yvav2.y, vav2.yVAV) annotation (Line(points={{-67,60},{-52,
+          60},{-52,68},{-44,68}},
                               color={0,0,127}));
   connect(VSup2.V_flow, vToCFM_vav2.V_flow)
     annotation (Line(points={{70,111},{70,174},{98,174}}, color={0,0,127}));
-  connect(vav2.port_a, coiSou.ports[2]) annotation (Line(points={{-30,40},{-30,
-          0},{-50,0},{-50,-20},{-80,-20}},
-                           color={0,127,255}));
   connect(vToCFM_vav2.CFM, toV.x)
     annotation (Line(points={{121,174},{128,174}}, color={0,0,127}));
   connect(toV.v, V2_flow_V) annotation (Line(points={{151,174},{170,174},{170,
@@ -322,8 +352,6 @@ equation
                                                   color={0,0,127}));
   connect(volToUni_yvav1.y, vav1.yVAV) annotation (Line(points={{-67,-50},{-56,
           -50},{-56,-52},{-44,-52}}, color={0,0,127}));
-  connect(zer.y, vav1.yVal) annotation (Line(points={{-79,20},{-60,20},{-60,-68},
-          {-44,-68}}, color={0,0,127}));
   connect(VSup1.port_b, zon1.supplyAir) annotation (Line(points={{80,-20},{98,
           -20},{98,-40},{114,-40}}, color={0,127,255}));
   connect(zon1.returnAir, sin.ports[3]) annotation (Line(points={{114,-44},{100,
@@ -352,8 +380,6 @@ equation
           {34,-190},{34,0},{70,0},{70,-9}}, color={0,0,127}));
   connect(kToF3.K, zon1.TRooAir) annotation (Line(points={{102,-220},{8,-220},{
           8,10},{158,10},{158,-42},{155,-42}}, color={0,0,127}));
-  connect(coiSou.ports[3], vav1.port_a) annotation (Line(points={{-80,-22.6667},
-          {-56,-22.6667},{-56,-98},{-30,-98},{-30,-80}}, color={0,127,255}));
   connect(weaBus, zon1.weaBus) annotation (Line(
       points={{-50,130},{46,130},{46,22},{120,22},{120,-24}},
       color={255,204,51},
@@ -362,6 +388,35 @@ equation
       index=-1,
       extent={{-3,6},{-3,6}},
       horizontalAlignment=TextAlignment.Right));
+  connect(yHea2, volToUni_yhea2.v)
+    annotation (Line(points={{-120,30},{-94,30}}, color={0,0,127}));
+  connect(volToUni_yhea2.y, vav2.yVal) annotation (Line(points={{-71,30},{-52,
+          30},{-52,52},{-44,52}}, color={0,0,127}));
+  connect(yHea1, volToUni_yhea1.v)
+    annotation (Line(points={{-120,-90},{-94,-90}}, color={0,0,127}));
+  connect(volToUni_yhea1.y, vav1.yVal) annotation (Line(points={{-71,-90},{-60,
+          -90},{-60,-68},{-44,-68}}, color={0,0,127}));
+  connect(vav2.port_a, val2.port_b)
+    annotation (Line(points={{-30,40},{-30,26}}, color={0,127,255}));
+  connect(val2.port_a, coiSou.ports[2]) annotation (Line(points={{-30,6},{-30,
+          -16},{-52,-16},{-52,-224},{-80,-224}}, color={0,127,255}));
+  connect(coiSou.ports[3], val1.port_a) annotation (Line(points={{-80,-226.667},
+          {-40,-226.667},{-40,-120}}, color={0,127,255}));
+  connect(val1.port_b, vav1.port_a) annotation (Line(points={{-40,-100},{-40,
+          -88},{-30,-88},{-30,-80}}, color={0,127,255}));
+  connect(volToUni_yvav2.y, reaToBoo2.u) annotation (Line(points={{-67,60},{-62,
+          60},{-62,16},{-100,16},{-100,0},{-96,0}}, color={0,0,127}));
+  connect(reaToBoo2.y, booToRea2.u)
+    annotation (Line(points={{-73,0},{-68,0}}, color={255,0,255}));
+  connect(booToRea2.y, val2.y) annotation (Line(points={{-45,0},{-40,0},{-40,10},
+          {-46,10},{-46,16},{-42,16}}, color={0,0,127}));
+  connect(reaToBoo1.y, booToRea1.u)
+    annotation (Line(points={{-79,-150},{-74,-150}}, color={255,0,255}));
+  connect(volToUni_yvav1.y, reaToBoo1.u) annotation (Line(points={{-67,-50},{
+          -64,-50},{-64,-120},{-112,-120},{-112,-150},{-102,-150}}, color={0,0,
+          127}));
+  connect(booToRea1.y, val1.y) annotation (Line(points={{-51,-150},{-46,-150},{
+          -46,-128},{-60,-128},{-60,-110},{-52,-110}}, color={0,0,127}));
   annotation (Diagram(
         coordinateSystem(preserveAspectRatio=false, extent={{-100,-240},{180,300}})), Icon(
         coordinateSystem(extent={{-100,-240},{180,300}}),
