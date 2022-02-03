@@ -54,8 +54,8 @@ model TwoZoneVAVUnitConverted
     m_flow_nominal=m_flow_nominal,
     VRoo=VRoo) "Zone for core of buildings (azimuth will be neglected)"
     annotation (Placement(transformation(extent={{-40,40},{0,80}})));
-  Buildings.Fluid.Sensors.TemperatureTwoPort TDisVAV2(redeclare package Medium
-      = MediumA, m_flow_nominal=m_flow_nominal)
+  Buildings.Fluid.Sensors.TemperatureTwoPort TDisVAV2(redeclare package Medium =
+        MediumA, m_flow_nominal=m_flow_nominal)
     annotation (Placement(transformation(extent={{-16,90},{4,110}})));
   Buildings.Fluid.Sensors.VolumeFlowRate VSup2(
     redeclare package Medium = MediumA,
@@ -149,8 +149,8 @@ model TwoZoneVAVUnitConverted
     m_flow_nominal=m_flow_nominal,
     VRoo=VRoo) "Zone for core of buildings (azimuth will be neglected)"
     annotation (Placement(transformation(extent={{-40,-80},{0,-40}})));
-  Buildings.Fluid.Sensors.TemperatureTwoPort TDisVAV1(redeclare package Medium
-      = MediumA, m_flow_nominal=m_flow_nominal)
+  Buildings.Fluid.Sensors.TemperatureTwoPort TDisVAV1(redeclare package Medium =
+        MediumA, m_flow_nominal=m_flow_nominal)
     annotation (Placement(transformation(extent={{-16,-30},{4,-10}})));
   Buildings.Fluid.Sensors.VolumeFlowRate VSup1(
     redeclare package Medium = MediumA,
@@ -431,7 +431,7 @@ equation
           textString="%name")}),
     experiment(
       StopTime=86400,
-      __Dymola_fixedstepsize=0.01,
+      __Dymola_fixedstepsize=0.1,
       __Dymola_Algorithm="Euler"),
     __Dymola_experimentFlags(Advanced(
         InlineMethod=0,

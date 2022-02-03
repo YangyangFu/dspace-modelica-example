@@ -55,8 +55,8 @@ model OneZoneVAVUnitConvertedFullRange
     m_flow_nominal=m_flow_nominal,
     VRoo=VRoo) "Zone for core of buildings (azimuth will be neglected)"
     annotation (Placement(transformation(extent={{-40,40},{0,80}})));
-  Buildings.Fluid.Sensors.TemperatureTwoPort TDisVAV2(redeclare package Medium
-      = MediumA, m_flow_nominal=m_flow_nominal)
+  Buildings.Fluid.Sensors.TemperatureTwoPort TDisVAV2(redeclare package Medium =
+        MediumA, m_flow_nominal=m_flow_nominal)
     annotation (Placement(transformation(extent={{-16,90},{4,110}})));
   Buildings.Fluid.Sensors.VolumeFlowRate VSup2(
     redeclare package Medium = MediumA,

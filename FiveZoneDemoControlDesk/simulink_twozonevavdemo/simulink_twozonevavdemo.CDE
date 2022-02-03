@@ -9,9 +9,9 @@
 		<Path type="key">.\simulink_twozonevavdemo</Path>
 		<Flags type="key">4096</Flags>
 		<Type type="key">2</Type>
-		<UniqueID type="key">889712304</UniqueID>
-		<EntityID type="key">{89AA00B4-27E2-44B6-8072-E5C6565165E1}</EntityID>
-		<ItemInfoDate type="key">11/12/2021 5:34:57 PM</ItemInfoDate>
+		<UniqueID type="key">118948689</UniqueID>
+		<EntityID type="key">{E078EE26-B9FA-4632-A398-C27821533C8D}</EntityID>
+		<ItemInfoDate type="key">2/1/2022 12:18:35 AM</ItemInfoDate>
 		<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
 		<ItemInfoDescr type="key"/>
 		<ItemInfoAddInfoDb type="key"/>
@@ -23,9 +23,9 @@
 			<Path type="key">..</Path>
 			<Flags type="key">4100</Flags>
 			<Type type="key">3</Type>
-			<UniqueID type="key">236130859</UniqueID>
-			<EntityID type="key">{A227B7C7-D9A5-48CC-BE45-250F0B1FF0C3}</EntityID>
-			<ItemInfoDate type="key">11/12/2021 5:34:57 PM</ItemInfoDate>
+			<UniqueID type="key">130499767</UniqueID>
+			<EntityID type="key">{DBA4D91F-6D58-44A9-8979-A94F4BF3E70C}</EntityID>
+			<ItemInfoDate type="key">2/1/2022 12:18:35 AM</ItemInfoDate>
 			<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
 			<ItemInfoDescr type="key"/>
 			<ItemInfoAddInfoDb type="key"/>
@@ -39,9 +39,9 @@
 				<Flags type="key">256</Flags>
 				<ExtendedFlags type="key">4224</ExtendedFlags>
 				<Type type="key">3</Type>
-				<UniqueID type="key">301913</UniqueID>
-				<EntityID type="key">{539D8EC9-71D6-4025-8CD7-7E52B63FE0B3}</EntityID>
-				<ItemInfoDate type="key">11/12/2021 5:34:57 PM</ItemInfoDate>
+				<UniqueID type="key">107343146</UniqueID>
+				<EntityID type="key">{E1196E8E-77B2-41F4-85AD-71BDC71CBA6A}</EntityID>
+				<ItemInfoDate type="key">2/1/2022 12:18:35 AM</ItemInfoDate>
 				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
 				<ItemInfoDescr type="key"/>
 				<ItemInfoAddInfoDb type="key"/>
@@ -52,9 +52,9 @@
 					<Path type="key">.\Experiment Layouts</Path>
 					<Flags type="key">4100</Flags>
 					<Type type="key">4</Type>
-					<UniqueID type="key">112784730</UniqueID>
-					<EntityID type="key">{35D5497C-55A9-43FA-9889-D2C94161E9A5}</EntityID>
-					<ItemInfoDate type="key">11/12/2021 5:34:58 PM</ItemInfoDate>
+					<UniqueID type="key">812543189</UniqueID>
+					<EntityID type="key">{E0DB079A-5463-40EA-B2A7-A8D5C13EBDC7}</EntityID>
+					<ItemInfoDate type="key">2/1/2022 12:18:37 AM</ItemInfoDate>
 					<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
 					<ItemInfoDescr type="key"/>
 					<ItemInfoAddInfoDb type="key"/>
@@ -62,14 +62,14 @@
 				</item>
 				<item>
 					<Component type="key">Instrumentation</Component>
-					<Name type="key">OA.lay</Name>
-					<DisplayName type="key">OA.lay</DisplayName>
+					<Name type="key">oa.lay</Name>
+					<DisplayName type="key">oa.lay</DisplayName>
 					<Path type="key">.\Experiment Layouts</Path>
 					<Flags type="key">16448</Flags>
 					<Type type="key">10</Type>
-					<UniqueID type="key">499197639</UniqueID>
-					<EntityID type="key">{634511FF-2729-4A75-8585-5BB5F55E4DF6}</EntityID>
-					<ItemInfoDate type="key">11/12/2021 5:34:58 PM</ItemInfoDate>
+					<UniqueID type="key">277580017</UniqueID>
+					<EntityID type="key">{F1750F71-F7ED-47FF-9DC0-B346229DEC4B}</EntityID>
+					<ItemInfoDate type="key">2/1/2022 12:18:37 AM</ItemInfoDate>
 					<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
 					<ItemInfoDescr type="key"/>
 					<ItemInfoAddInfoDb type="key"/>
@@ -77,14 +77,14 @@
 				</item>
 				<item>
 					<Component type="key">Instrumentation</Component>
-					<Name type="key">zone.lay</Name>
-					<DisplayName type="key">zone.lay</DisplayName>
+					<Name type="key">zone_1.lay</Name>
+					<DisplayName type="key">zone_1.lay</DisplayName>
 					<Path type="key">.\Experiment Layouts</Path>
 					<Flags type="key">16448</Flags>
 					<Type type="key">10</Type>
-					<UniqueID type="key">172925300</UniqueID>
-					<EntityID type="key">{01EEF08F-EE89-479B-B4B2-08DEAE00DC67}</EntityID>
-					<ItemInfoDate type="key">11/16/2021 4:51:11 PM</ItemInfoDate>
+					<UniqueID type="key">232361915</UniqueID>
+					<EntityID type="key">{3D4B3AB3-16C7-4C19-93BE-BADE44AA341E}</EntityID>
+					<ItemInfoDate type="key">2/1/2022 9:10:12 AM</ItemInfoDate>
 					<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
 					<ItemInfoDescr type="key"/>
 					<ItemInfoAddInfoDb type="key"/>
@@ -92,29 +92,14 @@
 				</item>
 				<item>
 					<Component type="key">Instrumentation</Component>
-					<Name type="key">time.lay</Name>
-					<DisplayName type="key">time.lay</DisplayName>
+					<Name type="key">input.lay</Name>
+					<DisplayName type="key">input.lay</DisplayName>
 					<Path type="key">.\Experiment Layouts</Path>
 					<Flags type="key">16448</Flags>
 					<Type type="key">10</Type>
-					<UniqueID type="key">802944911</UniqueID>
-					<EntityID type="key">{B3E4764B-6757-4A5F-92CD-8969481A2508}</EntityID>
-					<ItemInfoDate type="key">11/17/2021 7:52:21 PM</ItemInfoDate>
-					<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
-					<ItemInfoDescr type="key"/>
-					<ItemInfoAddInfoDb type="key"/>
-					<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
-				</item>
-				<item>
-					<Component type="key">Instrumentation</Component>
-					<Name type="key">yvav.lay</Name>
-					<DisplayName type="key">yvav.lay</DisplayName>
-					<Path type="key">.\Experiment Layouts</Path>
-					<Flags type="key">16448</Flags>
-					<Type type="key">10</Type>
-					<UniqueID type="key">822347653</UniqueID>
-					<EntityID type="key">{B460DF04-B5F3-49BD-998D-E9C015340F09}</EntityID>
-					<ItemInfoDate type="key">11/24/2021 4:11:29 PM</ItemInfoDate>
+					<UniqueID type="key">227781726</UniqueID>
+					<EntityID type="key">{C18BCC06-5CC7-48F6-84F8-F897BA1BDC45}</EntityID>
+					<ItemInfoDate type="key">2/2/2022 10:17:55 PM</ItemInfoDate>
 					<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
 					<ItemInfoDescr type="key"/>
 					<ItemInfoAddInfoDb type="key"/>
@@ -128,36 +113,36 @@
 				<Path type="key">.</Path>
 				<Flags type="key">256</Flags>
 				<Type type="key">3</Type>
-				<UniqueID type="key">177467594</UniqueID>
-				<EntityID type="key">{F65715A2-8AAE-4F9E-9C41-9D6DE44E0E6A}</EntityID>
-				<ItemInfoDate type="key">11/12/2021 5:34:57 PM</ItemInfoDate>
+				<UniqueID type="key">129350532</UniqueID>
+				<EntityID type="key">{622F4444-7340-4407-9741-08475EAD42FA}</EntityID>
+				<ItemInfoDate type="key">2/1/2022 12:18:35 AM</ItemInfoDate>
 				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
 				<ItemInfoDescr type="key"/>
 				<ItemInfoAddInfoDb type="key"/>
 				<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
 				<item>
 					<Component type="key">PlatformManagement</Component>
-					<Targets type="key">Device::c27ce3dd-350d-446c-a00b-8e01ebb9a698</Targets>
+					<Targets type="key">Device::38d9fe9e-aa7a-496e-8644-f0575eb55864</Targets>
 					<RestoreInfopmdn type="key">Platform</RestoreInfopmdn>
-					<RestoreInfopmid type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</RestoreInfopmid>
-					<Name type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Name>
+					<RestoreInfopmid type="key">38d9fe9e-aa7a-496e-8644-f0575eb55864</RestoreInfopmid>
+					<Name type="key">38d9fe9e-aa7a-496e-8644-f0575eb55864</Name>
 					<DisplayName type="key">Platform [SCALEXIO Platform, assigned to 'SCALEXIO']</DisplayName>
 					<Flags type="key">128</Flags>
 					<ExtendedFlags type="key">3072</ExtendedFlags>
 					<Type type="key">6</Type>
-					<UniqueID type="key">1059018038</UniqueID>
-					<EntityID type="key">{035BD52C-6F89-40F0-861E-35EDC6484A9E}</EntityID>
-					<ItemInfoDate type="key">11/12/2021 5:34:58 PM</ItemInfoDate>
+					<UniqueID type="key">642595078</UniqueID>
+					<EntityID type="key">{31D3EC08-F9A4-48A7-BF94-5FB74D2D99D1}</EntityID>
+					<ItemInfoDate type="key">2/1/2022 12:18:37 AM</ItemInfoDate>
 					<ItemInfoDescr type="key"/>
 					<ItemInfoAddInfoDb type="key"/>
 					<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
 					<item>
 						<Component type="key">VariablesManagement</Component>
-						<Targets type="key">,VariableDescription::simulink_twozonevavdemo.sdf</Targets>
+						<Targets type="key">,VariableDescription::simulink_twozonevavdemo.sdf(#1)</Targets>
 						<Flags type="key">18736</Flags>
 						<ExtendedFlags type="key">1</ExtendedFlags>
-						<UniqueID type="key">820544103</UniqueID>
-						<LinkedItem type="key">182112860</LinkedItem>
+						<UniqueID type="key">375078789</UniqueID>
+						<LinkedItem type="key">114852174</LinkedItem>
 						<item>
 							<Component type="key">DataSetManager</Component>
 							<Name type="key">Data Sets</Name>
@@ -166,9 +151,9 @@
 							<Flags type="key">65798</Flags>
 							<ExtendedFlags type="key">132</ExtendedFlags>
 							<Type type="key">3</Type>
-							<UniqueID type="key">721936461</UniqueID>
-							<EntityID type="key">{9372344C-8740-4E18-AF10-F6AAEDB5E678}</EntityID>
-							<ItemInfoDate type="key">11/12/2021 5:34:58 PM</ItemInfoDate>
+							<UniqueID type="key">854755488</UniqueID>
+							<EntityID type="key">{D29ABF7B-DAD3-43B9-89AB-655A9C7CA17D}</EntityID>
+							<ItemInfoDate type="key">2/1/2022 12:18:37 AM</ItemInfoDate>
 							<ItemInfoDescr type="key"/>
 							<ItemInfoAddInfoDb type="key"/>
 							<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
@@ -183,9 +168,9 @@
 				<Path type="key">.</Path>
 				<Flags type="key">4</Flags>
 				<Type type="key">3</Type>
-				<UniqueID type="key">538595186</UniqueID>
-				<EntityID type="key">{9092D756-838F-4C5F-B848-9D30E7A2EE6F}</EntityID>
-				<ItemInfoDate type="key">11/12/2021 5:34:57 PM</ItemInfoDate>
+				<UniqueID type="key">95782151</UniqueID>
+				<EntityID type="key">{D4553117-00CF-4C90-BF86-D70D00FA1460}</EntityID>
+				<ItemInfoDate type="key">2/1/2022 12:18:35 AM</ItemInfoDate>
 				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
 				<ItemInfoDescr type="key"/>
 				<ItemInfoAddInfoDb type="key"/>
@@ -199,9 +184,9 @@
 				<Flags type="key">256</Flags>
 				<ExtendedFlags type="key">4224</ExtendedFlags>
 				<Type type="key">3</Type>
-				<UniqueID type="key">885113183</UniqueID>
-				<EntityID type="key">{6628E936-4C60-4319-97D9-DD0F4E889F70}</EntityID>
-				<ItemInfoDate type="key">11/12/2021 5:34:57 PM</ItemInfoDate>
+				<UniqueID type="key">447968095</UniqueID>
+				<EntityID type="key">{14BAFA9E-AAE7-4037-BD3A-A0D0F365C5C1}</EntityID>
+				<ItemInfoDate type="key">2/1/2022 12:18:35 AM</ItemInfoDate>
 				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
 				<ItemInfoDescr type="key"/>
 				<ItemInfoAddInfoDb type="key"/>
@@ -214,9 +199,9 @@
 				<DisplayName type="key">Reports</DisplayName>
 				<Path type="key">.</Path>
 				<Type type="key">3</Type>
-				<UniqueID type="key">716801588</UniqueID>
-				<EntityID type="key">{D190E3DB-C9BA-449F-B2E8-D64ADA3456D9}</EntityID>
-				<ItemInfoDate type="key">11/12/2021 5:34:57 PM</ItemInfoDate>
+				<UniqueID type="key">554813080</UniqueID>
+				<EntityID type="key">{C2FE871E-3C24-420E-AF93-1120F49CF8F3}</EntityID>
+				<ItemInfoDate type="key">2/1/2022 12:18:35 AM</ItemInfoDate>
 				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
 				<ItemInfoDocs type="key">.rtf,.pdf,.html,.txt,.csv</ItemInfoDocs>
 				<ItemInfoDescr type="key"/>
@@ -232,9 +217,9 @@
 				<Flags type="key">256</Flags>
 				<ExtendedFlags type="key">4224</ExtendedFlags>
 				<Type type="key">3</Type>
-				<UniqueID type="key">887348942</UniqueID>
-				<EntityID type="key">{635F243A-CE9B-4B63-9774-C672271BD3D1}</EntityID>
-				<ItemInfoDate type="key">11/12/2021 5:34:57 PM</ItemInfoDate>
+				<UniqueID type="key">79956239</UniqueID>
+				<EntityID type="key">{D5884585-3BE9-4588-A131-694CD05D2A54}</EntityID>
+				<ItemInfoDate type="key">2/1/2022 12:18:35 AM</ItemInfoDate>
 				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
 				<ItemInfoDocs type="key">.py</ItemInfoDocs>
 				<ItemInfoDescr type="key"/>
@@ -248,9 +233,9 @@
 				<Path type="key">.</Path>
 				<Flags type="key">256</Flags>
 				<Type type="key">3</Type>
-				<UniqueID type="key">899480433</UniqueID>
-				<EntityID type="key">{D480F381-1E96-49A8-8795-750199DCA11B}</EntityID>
-				<ItemInfoDate type="key">11/12/2021 5:34:57 PM</ItemInfoDate>
+				<UniqueID type="key">371890346</UniqueID>
+				<EntityID type="key">{016C96CF-D425-4087-943F-0E45D6C17A96}</EntityID>
+				<ItemInfoDate type="key">2/1/2022 12:18:35 AM</ItemInfoDate>
 				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
 				<ItemInfoDescr type="key"/>
 				<ItemInfoAddInfoDb type="key"/>
@@ -264,23 +249,23 @@
 				<Flags type="key">260</Flags>
 				<ExtendedFlags type="key">256</ExtendedFlags>
 				<Type type="key">3</Type>
-				<UniqueID type="key">887970571</UniqueID>
-				<EntityID type="key">{364A8F21-FEC6-4F4D-8465-ABD71E9C89C1}</EntityID>
-				<ItemInfoDate type="key">11/12/2021 5:34:57 PM</ItemInfoDate>
+				<UniqueID type="key">860347348</UniqueID>
+				<EntityID type="key">{2019B7B2-F97F-421E-B98A-1D7331BA62E2}</EntityID>
+				<ItemInfoDate type="key">2/1/2022 12:18:35 AM</ItemInfoDate>
 				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
 				<ItemInfoDescr type="key"/>
 				<ItemInfoAddInfoDb type="key"/>
 				<ItemInfoAuthor type="key">yangyang.fu</ItemInfoAuthor>
 				<item>
 					<Component type="key">BusNavigator</Component>
-					<Name type="key">simulink_twozonevavdemo.sdf</Name>
-					<DisplayName type="key">simulink_twozonevavdemo.sdf</DisplayName>
+					<Name type="key">simulink_twozonevavdemo.sdf(#1)</Name>
+					<DisplayName type="key">simulink_twozonevavdemo.sdf(#1)</DisplayName>
 					<Path type="key">.\BusNavigator</Path>
 					<Flags type="key">16644</Flags>
 					<Type type="key">3</Type>
-					<UniqueID type="key">761776393</UniqueID>
-					<EntityID type="key">{2554197C-2764-4221-AAF2-85B28DF488AD}</EntityID>
-					<ItemInfoDate type="key">11/12/2021 5:34:59 PM</ItemInfoDate>
+					<UniqueID type="key">534342283</UniqueID>
+					<EntityID type="key">{3A25DFBF-C1CD-4E01-BCF9-9A9BBDB62278}</EntityID>
+					<ItemInfoDate type="key">2/1/2022 12:18:37 AM</ItemInfoDate>
 					<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
 					<ItemInfoDescr type="key"/>
 					<ItemInfoAddInfoDb type="key"/>
@@ -289,12 +274,12 @@
 						<Component type="key">BusNavigator</Component>
 						<Name type="key">BusConfiguration.xml</Name>
 						<DisplayName type="key">BusConfiguration.xml</DisplayName>
-						<Path type="key">.\BusNavigator\simulink_twozonevavdemo.sdf</Path>
+						<Path type="key">.\BusNavigator\simulink_twozonevavdemo.sdf(#1)</Path>
 						<Flags type="key">18692</Flags>
 						<Type type="key">4</Type>
-						<UniqueID type="key">1015696127</UniqueID>
-						<EntityID type="key">{BA704190-4440-4811-8337-45F8C12C2E76}</EntityID>
-						<ItemInfoDate type="key">11/12/2021 5:34:59 PM</ItemInfoDate>
+						<UniqueID type="key">162206787</UniqueID>
+						<EntityID type="key">{EE93825B-6F8A-4194-91A3-7DE7A7912738}</EntityID>
+						<ItemInfoDate type="key">2/1/2022 12:18:37 AM</ItemInfoDate>
 						<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
 						<ItemInfoDescr type="key"/>
 						<ItemInfoAddInfoDb type="key"/>
@@ -309,9 +294,9 @@
 				<Path type="key">.</Path>
 				<Flags type="key">256</Flags>
 				<Type type="key">3</Type>
-				<UniqueID type="key">858020270</UniqueID>
-				<EntityID type="key">{1027ED70-4F02-4DA4-94DE-69F4E5BEE984}</EntityID>
-				<ItemInfoDate type="key">11/12/2021 5:34:57 PM</ItemInfoDate>
+				<UniqueID type="key">457184666</UniqueID>
+				<EntityID type="key">{2DB168F8-BE58-4DFF-B1F6-4353E2C7B18A}</EntityID>
+				<ItemInfoDate type="key">2/1/2022 12:18:35 AM</ItemInfoDate>
 				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
 				<ItemInfoDescr type="key"/>
 				<ItemInfoAddInfoDb type="key"/>
@@ -325,9 +310,9 @@
 			<Flags type="key">4</Flags>
 			<ExtendedFlags type="key">4</ExtendedFlags>
 			<Type type="key">3</Type>
-			<UniqueID type="key">409587846</UniqueID>
-			<EntityID type="key">{626E3130-FCC0-4DDF-BE28-1B1661314AC7}</EntityID>
-			<ItemInfoDate type="key">11/12/2021 5:34:59 PM</ItemInfoDate>
+			<UniqueID type="key">246555124</UniqueID>
+			<EntityID type="key">{83915550-7864-447E-B79E-2E34FE432F8B}</EntityID>
+			<ItemInfoDate type="key">2/1/2022 12:18:37 AM</ItemInfoDate>
 			<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
 			<ItemInfoDescr type="key"/>
 			<ItemInfoAddInfoDb type="key"/>
@@ -338,9 +323,9 @@
 				<Path type="key">.\Events</Path>
 				<Flags type="key">4</Flags>
 				<Type type="key">52</Type>
-				<UniqueID type="key">389385799</UniqueID>
-				<EntityID type="key">{28503486-62B9-42A3-ABE4-5D1DB3EB9E8F}</EntityID>
-				<ItemInfoDate type="key">11/12/2021 5:34:59 PM</ItemInfoDate>
+				<UniqueID type="key">364620216</UniqueID>
+				<EntityID type="key">{FD814231-20B9-4DA9-A85C-3C482B43F5F6}</EntityID>
+				<ItemInfoDate type="key">2/1/2022 12:18:37 AM</ItemInfoDate>
 				<ItemInfoPath type="key">$FPATH$</ItemInfoPath>
 				<ItemInfoDescr type="key"/>
 				<ItemInfoAddInfoDb type="key"/>
@@ -371,7 +356,7 @@
 		<SimulationTimeGroupSupported type="key">-1</SimulationTimeGroupSupported>
 		<DeviceFactory>
 			<Device>
-				<DeviceName type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</DeviceName>
+				<DeviceName type="key">38d9fe9e-aa7a-496e-8644-f0575eb55864</DeviceName>
 				<DisplayName type="key">Platform</DisplayName>
 				<DeviceType type="key">240</DeviceType>
 				<DeviceConfiguration/>
@@ -471,13 +456,13 @@
 		</DeviceFactory>
 	</PlatformManagement>
 	<MeasurementConfiguration>
-		<NextUniqueKey type="key">18</NextUniqueKey>
+		<NextUniqueKey type="key">22</NextUniqueKey>
 		<SortedColumn type="key">4</SortedColumn>
 		<SortAscending type="key">-1</SortAscending>
 		<SignalList>
 			<Variable>
 				<Name type="key">Model Root/DymolaBlock/RHOut</Name>
-				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
+				<Platform type="key">38d9fe9e-aa7a-496e-8644-f0575eb55864</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
 					<Raster type="key">Periodic Task 1</Raster>
@@ -485,15 +470,15 @@
 			</Variable>
 			<Variable>
 				<Name type="key">Model Root/DymolaBlock/RHOut_V</Name>
-				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
+				<Platform type="key">38d9fe9e-aa7a-496e-8644-f0575eb55864</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
 					<Raster type="key">Periodic Task 1</Raster>
 				</Signal>
 			</Variable>
 			<Variable>
-				<Name type="key">Model Root/DymolaBlock/t</Name>
-				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
+				<Name type="key">Model Root/DymolaBlock/TDis1</Name>
+				<Platform type="key">38d9fe9e-aa7a-496e-8644-f0575eb55864</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
 					<Raster type="key">Periodic Task 1</Raster>
@@ -501,7 +486,15 @@
 			</Variable>
 			<Variable>
 				<Name type="key">Model Root/DymolaBlock/TDis1_V</Name>
-				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
+				<Platform type="key">38d9fe9e-aa7a-496e-8644-f0575eb55864</Platform>
+				<Active type="key">-1</Active>
+				<Signal>
+					<Raster type="key">Periodic Task 1</Raster>
+				</Signal>
+			</Variable>
+			<Variable>
+				<Name type="key">Model Root/DymolaBlock/TDis2</Name>
+				<Platform type="key">38d9fe9e-aa7a-496e-8644-f0575eb55864</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
 					<Raster type="key">Periodic Task 1</Raster>
@@ -509,7 +502,7 @@
 			</Variable>
 			<Variable>
 				<Name type="key">Model Root/DymolaBlock/TDis2_V</Name>
-				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
+				<Platform type="key">38d9fe9e-aa7a-496e-8644-f0575eb55864</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
 					<Raster type="key">Periodic Task 1</Raster>
@@ -517,7 +510,7 @@
 			</Variable>
 			<Variable>
 				<Name type="key">Model Root/DymolaBlock/TOut</Name>
-				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
+				<Platform type="key">38d9fe9e-aa7a-496e-8644-f0575eb55864</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
 					<Raster type="key">Periodic Task 1</Raster>
@@ -525,7 +518,7 @@
 			</Variable>
 			<Variable>
 				<Name type="key">Model Root/DymolaBlock/TOut_V</Name>
-				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
+				<Platform type="key">38d9fe9e-aa7a-496e-8644-f0575eb55864</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
 					<Raster type="key">Periodic Task 1</Raster>
@@ -533,7 +526,7 @@
 			</Variable>
 			<Variable>
 				<Name type="key">Model Root/DymolaBlock/TRooAir1</Name>
-				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
+				<Platform type="key">38d9fe9e-aa7a-496e-8644-f0575eb55864</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
 					<Raster type="key">Periodic Task 1</Raster>
@@ -541,7 +534,7 @@
 			</Variable>
 			<Variable>
 				<Name type="key">Model Root/DymolaBlock/TRooAir1_V</Name>
-				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
+				<Platform type="key">38d9fe9e-aa7a-496e-8644-f0575eb55864</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
 					<Raster type="key">Periodic Task 1</Raster>
@@ -549,7 +542,7 @@
 			</Variable>
 			<Variable>
 				<Name type="key">Model Root/DymolaBlock/TRooAir2</Name>
-				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
+				<Platform type="key">38d9fe9e-aa7a-496e-8644-f0575eb55864</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
 					<Raster type="key">Periodic Task 1</Raster>
@@ -557,7 +550,7 @@
 			</Variable>
 			<Variable>
 				<Name type="key">Model Root/DymolaBlock/TRooAir2_V</Name>
-				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
+				<Platform type="key">38d9fe9e-aa7a-496e-8644-f0575eb55864</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
 					<Raster type="key">Periodic Task 1</Raster>
@@ -565,7 +558,7 @@
 			</Variable>
 			<Variable>
 				<Name type="key">Model Root/DymolaBlock/V1_flow</Name>
-				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
+				<Platform type="key">38d9fe9e-aa7a-496e-8644-f0575eb55864</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
 					<Raster type="key">Periodic Task 1</Raster>
@@ -573,7 +566,7 @@
 			</Variable>
 			<Variable>
 				<Name type="key">Model Root/DymolaBlock/V1_flow_V</Name>
-				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
+				<Platform type="key">38d9fe9e-aa7a-496e-8644-f0575eb55864</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
 					<Raster type="key">Periodic Task 1</Raster>
@@ -581,7 +574,7 @@
 			</Variable>
 			<Variable>
 				<Name type="key">Model Root/DymolaBlock/V2_flow</Name>
-				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
+				<Platform type="key">38d9fe9e-aa7a-496e-8644-f0575eb55864</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
 					<Raster type="key">Periodic Task 1</Raster>
@@ -589,23 +582,23 @@
 			</Variable>
 			<Variable>
 				<Name type="key">Model Root/DymolaBlock/V2_flow_V</Name>
-				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
+				<Platform type="key">38d9fe9e-aa7a-496e-8644-f0575eb55864</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
 					<Raster type="key">Periodic Task 1</Raster>
 				</Signal>
 			</Variable>
 			<Variable>
-				<Name type="key">Model Root/DymolaBlock/weaBus_relHum</Name>
-				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
+				<Name type="key">Model Root/yHea1/Voltage</Name>
+				<Platform type="key">38d9fe9e-aa7a-496e-8644-f0575eb55864</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
 					<Raster type="key">Periodic Task 1</Raster>
 				</Signal>
 			</Variable>
 			<Variable>
-				<Name type="key">Model Root/DymolaBlock/weaBus_TDryBul</Name>
-				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
+				<Name type="key">Model Root/yHea2/Voltage</Name>
+				<Platform type="key">38d9fe9e-aa7a-496e-8644-f0575eb55864</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
 					<Raster type="key">Periodic Task 1</Raster>
@@ -613,7 +606,7 @@
 			</Variable>
 			<Variable>
 				<Name type="key">Model Root/yVAV1/Voltage</Name>
-				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
+				<Platform type="key">38d9fe9e-aa7a-496e-8644-f0575eb55864</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
 					<Raster type="key">Periodic Task 1</Raster>
@@ -621,7 +614,7 @@
 			</Variable>
 			<Variable>
 				<Name type="key">Model Root/yVAV2/Voltage</Name>
-				<Platform type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Platform>
+				<Platform type="key">38d9fe9e-aa7a-496e-8644-f0575eb55864</Platform>
 				<Active type="key">-1</Active>
 				<Signal>
 					<Raster type="key">Periodic Task 1</Raster>
@@ -630,25 +623,25 @@
 		</SignalList>
 		<Platforms>
 			<Platform>
-				<Name type="key">c27ce3dd-350d-446c-a00b-8e01ebb9a698</Name>
+				<Name type="key">38d9fe9e-aa7a-496e-8644-f0575eb55864</Name>
 				<FilteredRastersView type="key">1</FilteredRastersView>
 				<UseDefaultRasterForParameters type="key">0</UseDefaultRasterForParameters>
 				<DefaultRaster type="key">Periodic Task 1</DefaultRaster>
 				<Rasters>
 					<PlatformTriggered>
 						<Name type="key">Periodic Task 1</Name>
-						<AutoRepeatEnabled type="key">0</AutoRepeatEnabled>
+						<AutoRepeatEnabled type="key">1</AutoRepeatEnabled>
 						<AutoRepeatBehavior type="key">1</AutoRepeatBehavior>
 						<MultiCaptureHistoryEnabled type="key">0</MultiCaptureHistoryEnabled>
 						<DownsamplingFactor type="key">1</DownsamplingFactor>
-						<StartTrigger type="key">14</StartTrigger>
-						<StopTrigger type="key">15</StopTrigger>
+						<StartTrigger type="key">20</StartTrigger>
+						<StopTrigger type="key">21</StopTrigger>
 					</PlatformTriggered>
 				</Rasters>
 				<EnabledHardwarePollingRasters/>
 				<PlatformTriggers>
 					<PlatformTrigger>
-						<UniqueKey type="key">14</UniqueKey>
+						<UniqueKey type="key">20</UniqueKey>
 						<Name type="key">Platform Trigger 1</Name>
 						<Condition type="key"/>
 						<Delay type="key">0</Delay>
@@ -659,41 +652,7 @@
 							<Platform type="key"/>
 						</VariableMappings>
 					</PlatformTrigger>
-					<PlatformTrigger>
-						<UniqueKey type="key">16</UniqueKey>
-						<Name type="key">Platform Trigger 2</Name>
-						<Condition type="key"/>
-						<Delay type="key">0</Delay>
-						<Enabled type="key">0</Enabled>
-						<Timeout type="key">0</Timeout>
-						<TimeoutEnabled type="key">0</TimeoutEnabled>
-						<VariableMappings>
-							<Platform type="key"/>
-						</VariableMappings>
-					</PlatformTrigger>
 				</PlatformTriggers>
-				<DataLoggers>
-					<DataLogger>
-						<Name type="key">2d2a64b3-0471-4151-bf16-5fe2784a80ff</Name>
-						<FilteredRastersView type="key">1</FilteredRastersView>
-						<UseDefaultRasterForParameters type="key">1</UseDefaultRasterForParameters>
-						<DefaultRaster type="key">Periodic Task 1</DefaultRaster>
-						<DisplayName type="key">DataLogger 1</DisplayName>
-						<UniqueIdentifier type="key">665027ff-c121-488d-ac31-15616d0cd5ea</UniqueIdentifier>
-						<Rasters>
-							<PlatformTriggered>
-								<Name type="key">Periodic Task 1</Name>
-								<AutoRepeatEnabled type="key">1</AutoRepeatEnabled>
-								<AutoRepeatBehavior type="key">1</AutoRepeatBehavior>
-								<MultiCaptureHistoryEnabled type="key">0</MultiCaptureHistoryEnabled>
-								<DownsamplingFactor type="key">1</DownsamplingFactor>
-								<StartTrigger type="key">16</StartTrigger>
-								<StopTrigger type="key">17</StopTrigger>
-							</PlatformTriggered>
-						</Rasters>
-						<EnabledHardwarePollingRasters/>
-					</DataLogger>
-				</DataLoggers>
 			</Platform>
 			<Platform>
 				<Name type="key">Calculated</Name>
@@ -711,14 +670,7 @@
 		</Platforms>
 		<DurationTriggers>
 			<DurationTrigger>
-				<UniqueKey type="key">17</UniqueKey>
-				<Name type="key">Duration Trigger 2</Name>
-				<Delay type="key">0</Delay>
-				<Duration type="key">1</Duration>
-				<Enabled type="key">0</Enabled>
-			</DurationTrigger>
-			<DurationTrigger>
-				<UniqueKey type="key">15</UniqueKey>
+				<UniqueKey type="key">21</UniqueKey>
 				<Name type="key">Duration Trigger 1</Name>
 				<Delay type="key">0</Delay>
 				<Duration type="key">1</Duration>
@@ -739,7 +691,7 @@
 				<AutomaticExportFolder type="key"/>
 				<AutomaticNamingEnabled type="key">-1</AutomaticNamingEnabled>
 				<AutomaticNamingMinimunDigits type="key">3</AutomaticNamingMinimunDigits>
-				<AutomaticNamingStartIndex type="key">2</AutomaticNamingStartIndex>
+				<AutomaticNamingStartIndex type="key">1</AutomaticNamingStartIndex>
 				<Description type="key"/>
 				<FileNamePrefix type="key">buf_</FileNamePrefix>
 				<OpenInMeasurementDataPoolEnabled type="key">0</OpenInMeasurementDataPoolEnabled>
