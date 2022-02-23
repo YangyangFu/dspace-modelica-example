@@ -416,7 +416,7 @@ equation
     Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-400,-400},{1440,
             750}})),
     experiment(
-      StopTime=60,
+      StopTime=3600,
       Tolerance=1e-06,
       __Dymola_fixedstepsize=0.1,
       __Dymola_Algorithm="Euler"));
